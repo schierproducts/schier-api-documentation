@@ -1,15 +1,23 @@
 ---
 home: true
-heroImage: https://v1.vuepress.vuejs.org/hero.png
-tagline: Documentation repository for Schier Products&#39; various digital IP and API documentation.
-actionText: Quick Start →
-actionLink: /guide/
+title: Digital Products Documentation
+heroImage: /assets/img/schier-logo-horizontal.svg
+tagline: Documentation repository for Schier Products' various digital IP and API documentation.
 features:
-- title: Feature 1 Title
-  details: Feature 1 Description
-- title: Feature 2 Title
-  details: Feature 2 Description
-- title: Feature 3 Title
-  details: Feature 3 Description
-footer: Made by Doug Niccum with ❤️
+- title: Grease Monkey API
+  details: Retrieve users, jurisdictions, and their associated projects from the Grease Monkey ecosystem.
+  link:
+    text: View Documentation
+    link: /grease-monkey/
+- title: Territory API
+  details: Retrieve Schier's sales territories, current sales firms, and associated postal codes, counties, and states.
+  link:
+    text: View Documentation
+    link: http://google.com
+- title: Product API
+  details: Get Schier's current product offering, images, documents and all other associated information
+  link:
+    text: View Documentation
+    link: http://google.com
+footer: 2021 Schier Products Company, Inc. All rights reserved.
 ---

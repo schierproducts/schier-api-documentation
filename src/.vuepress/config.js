@@ -1,10 +1,10 @@
-const { description } = require('../../package')
+const { description, repository } = require('../../package')
 
 module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'Vuepress Docs Boilerplate',
+  title: 'Schier Products Documentation',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -17,7 +17,7 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/config/#head
    */
   head: [
-    ['meta', { name: 'theme-color', content: '#3eaf7c' }],
+    ['meta', { name: 'theme-color', content: '#008752' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
   ],
@@ -28,37 +28,81 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    repo: '',
     editLinks: false,
     docsDir: '',
     editLinkText: '',
-    lastUpdated: false,
+    lastUpdated: true,
+    logo: '/assets/img/schier-logo-pioneer.svg',
+    // algolia: {
+    //   apiKey: 'd47b768e5920983964f1fbbca40b3611',
+    //   indexName: 'documentation-pages'
+    // },
     nav: [
       {
-        text: 'Guide',
-        link: '/guide/',
+        text: 'API Reference',
+        ariaLabel: 'API Reference Menu',
+        items: [
+          {
+            text: 'Grease Monkey API',
+            link: '/grease-monkey/'
+          },
+        ]
       },
       {
-        text: 'Config',
-        link: '/config/'
+        text: 'Packages',
+        ariaLabel: 'Packages Menu',
+        items: [
+          {
+            text: 'Product API Wrapper',
+            link: 'https://github.com/schierproducts/schier-products-api'
+          },
+        ]
       },
       {
-        text: 'VuePress',
-        link: 'https://v1.vuepress.vuejs.org'
+        text: 'Links',
+        ariaLabel: 'Links Menu',
+        items: [
+          {
+            text: 'Product API',
+            link: 'https://api.schierproducts.com'
+          },
+          {
+            text: 'Grease Monkey',
+            link: 'https://app.greasemonkeysizing.com'
+          }
+        ]
+      },
+    ],
+    sidebarDepth: 2,
+    sidebar: [
+      {
+        title: 'Documentation Home',
+        path: '/',
+        collapsable: false,
+      },
+      {
+        title: 'Getting Started',
+        path: '/basics/',
+        collapsable: false,
+        children: [
+          '/basics/',
+          '/basics/errors',
+          '/basics/pagination',
+        ],
+      },
+      {
+        title: 'Grease Monkey',
+        path: '/grease-monkey/',
+        collapsable: false,
+        children: [
+          {
+            title: 'About Grease Monkey API',
+            path: '/grease-monkey/',
+          },
+          '/grease-monkey/users',
+        ]
       }
     ],
-    sidebar: {
-      '/guide/': [
-        {
-          title: 'Guide',
-          collapsable: false,
-          children: [
-            '',
-            'using-vue',
-          ]
-        }
-      ],
-    }
   },
 
   /**
