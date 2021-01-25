@@ -28,7 +28,11 @@ module.exports = {
 
     ['meta', { name: 'theme-color', content: '#ffffff' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
-    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
+    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
+    ['script', { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-7WJY8LHWQZ'} ]
+    [
+      'script', {}, `window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-7WJY8LHWQZ');`
+    ],
   ],
 
   /**
