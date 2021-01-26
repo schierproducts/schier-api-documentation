@@ -113,6 +113,16 @@ module.exports = {
             path: '/grease-monkey/',
           },
           '/grease-monkey/users',
+          '/grease-monkey/projects',
+          {
+            title: 'Other Resources',
+            path: '/grease-monkey/other-resources/',
+            // collapsable: false,
+            children: [
+              '/grease-monkey/other-resources/kitchen-fixtures',
+              '/grease-monkey/other-resources/jurisdiction-contacts',
+            ],
+          }
         ]
       }
     ],
