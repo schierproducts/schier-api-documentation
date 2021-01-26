@@ -1,6 +1,6 @@
 ---
 title: Users
-sidebarDepth: 3
+description: This object references a user within Grease Monkey.
 ---
 
 # Users

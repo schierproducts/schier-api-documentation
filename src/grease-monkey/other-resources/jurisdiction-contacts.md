@@ -29,6 +29,13 @@ This object references a jurisdiction (AHJ) point-of-contact that a Schier Admin
     "state": "VA",
     "postal_code": "23219",
     "county": null
-  }
+  },
+  "is_primary_contact": false
 }
 ```
+
+### Attributes
+
+`is_primary_contact` <span class="code-note">boolean</span>
+
+If this contact has been identified as Schier's main point of contact for this jurisdiction.

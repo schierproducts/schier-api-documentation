@@ -114,6 +114,7 @@ module.exports = {
           },
           '/grease-monkey/users',
           '/grease-monkey/projects',
+          '/grease-monkey/jurisdictions',
           {
             title: 'Other Resources',
             path: '/grease-monkey/other-resources/',
@@ -121,6 +122,8 @@ module.exports = {
             children: [
               '/grease-monkey/other-resources/kitchen-fixtures',
               '/grease-monkey/other-resources/jurisdiction-contacts',
+              '/grease-monkey/other-resources/notes',
+              '/grease-monkey/other-resources/product-accessories',
             ],
           }
         ]

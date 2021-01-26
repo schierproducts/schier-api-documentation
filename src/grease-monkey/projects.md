@@ -1,5 +1,6 @@
 ---
 title: Projects
+description: References a project within Grease Monkey.
 sidebarDepth: 3
 ---
 
@@ -535,6 +536,8 @@ GET /api/projects/:id
 
 If you would like to include the project's Schier Admin-generated notes.
 
+[Also see Notes](/grease-monkey/other-resources/notes)
+
 ```bash
 /api/projects/1320?notes=true
 ```
@@ -552,6 +555,8 @@ If you would like to include the list of recommended, compatible accessories for
 ```bash
 /api/projects/1320?accessories=true
 ```
+
+[Also see Product Accessories](/grease-monkey/other-resources/product-accessories)
 
 ::: tip Note
 This defaults to false because of the large amount of information that can be included with this response.
