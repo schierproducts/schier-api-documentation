@@ -33,7 +33,7 @@ To use the provided API key, you will attach your key as a [Bearer Token header]
 
 So, for example, if you were using cURL to access the Grease Monkey API, your request would look something like this:
 
-```bash
+``` http
 curl --request GET \
   --url https://app.greasemonkeysizing.com/api/users \
   --header 'Authorization: Bearer <YOUR API TOKEN>'

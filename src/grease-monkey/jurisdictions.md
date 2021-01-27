@@ -10,7 +10,7 @@ You can also view more detailed information about an individual jurisdiction and
 
 ## Base Endpoints
 
-```url
+``` http
 GET /api/jurisdictions
 GET /api/jurisdictions/:id
 ```

@@ -59,6 +59,10 @@ module.exports = {
             text: 'Grease Monkey API',
             link: '/grease-monkey/'
           },
+          {
+            text: 'Territory API',
+            link: '/territory/'
+          },
         ]
       },
       {
@@ -127,6 +131,17 @@ module.exports = {
             ],
           }
         ]
+      },
+      {
+        title: 'Territory',
+        path: '/territory/',
+        collapsable: false,
+      },
+      {
+        title: 'Product',
+        path: '/product/',
+        collapsable: false,
+        children: []
       }
     ],
   },
@@ -137,5 +152,14 @@ module.exports = {
   plugins: [
     '@vuepress/plugin-back-to-top',
     '@vuepress/plugin-medium-zoom',
+    '@vuepress/last-updated',
+    {
+      transformer: (timestamp, lang) => {
+        // Don't forget to install moment yourself
+        const moment = require('moment')
+        moment.locale(lang)
+        return moment(timestamp).fromNow()
+      }
+    }
   ]
 }

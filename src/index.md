@@ -13,6 +13,9 @@ features:
     link: /grease-monkey/
 - title: Territory API
   details: Retrieve Schier's sales territories, current sales firms, and associated postal codes, counties, and states.
+  link:
+    text: View Documentation
+    link: /territory/
 - title: Product API
   details: Get Schier's current product offering, images, documents and all other associated information
 footer: 2021 Schier Products Company, Inc. All rights reserved.
