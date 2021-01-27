@@ -43,14 +43,18 @@ When retrieve a list of users, the amount of meta that is returned via the API i
 
 The type of user that either Schier or they themselves have identified with. The available options are:
 
-* Engineer / Architect
-* Contractor
-* Distributor
-* AHJ / Inspector
-* Facility Owner
-* Manufacturer Rep
-* Other
-* Schier Employee
+* `engineerArchitect` (Engineer / Architect)
+* `contractor` (Contractor)
+* `distributor` (Distributor)
+* `ahjInspector` (AHJ / Inspector)
+* `facilityOwner` (Facility Owner)
+* `manufacturerRep` (Manufacturer Rep)
+* `other` (Other)
+* `schierEmployee` (Schier Employee)
+
+::: tip
+The first value in the list above is the key that should be used. The second value is the "human-friendly" version.
+:::
 
 `number_of_projects` <span class="code-note">default: 0, integer</span>
 
