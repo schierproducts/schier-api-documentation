@@ -152,7 +152,7 @@ A list of cities that reside within this jurisdiction
 ::: details contacts <span class="code-note">optional, array</span>
 A list of contacts that work and/or are responsible for installation decisions within this jurisdiction.
 
-[See Jurisdiction Contacts](/grease-monkey/other-resources/jurisdiction-contacts)
+[See Jurisdiction Contacts](/grease-monkey/other-resources/jurisdiction-contacts.html)
 :::
 
 ::: details required_sampling_port <span class="code-note">optional, object</span>

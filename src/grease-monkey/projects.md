@@ -458,7 +458,7 @@ These values are provided in both pounds and gallons.
 ::: details fixtures <span class="code-note">object</span>
 A list of kitchen fixtures used to size this project.
 
-[See Kitchen Fixtures](/grease-monkey/other-resources/kitchen-fixtures)
+[See Kitchen Fixtures](/grease-monkey/other-resources/kitchen-fixtures.html)
 :::
 
 ::: details unique_local_requirements <span class="code-note">boolean</span>
@@ -536,7 +536,7 @@ GET /api/projects/:id
 
 If you would like to include the project's Schier Admin-generated notes.
 
-[Also see Notes](/grease-monkey/other-resources/notes)
+[Also see Notes](/grease-monkey/other-resources/notes.html)
 
 ```bash
 /api/projects/1320?notes=true
@@ -556,7 +556,7 @@ If you would like to include the list of recommended, compatible accessories for
 /api/projects/1320?accessories=true
 ```
 
-[Also see Product Accessories](/grease-monkey/other-resources/product-accessories)
+[Also see Product Accessories](/grease-monkey/other-resources/product-accessories.html)
 
 ::: tip Note
 This defaults to false because of the large amount of information that can be included with this response.
@@ -568,7 +568,7 @@ This defaults to false because of the large amount of information that can be in
 
 If you would like to include the list of kitchen fixtures and their detailed information.
 
-Also [see Kitchen Fixtures](/grease-monkey/other-resources/kitchen-fixtures).
+Also [see Kitchen Fixtures](/grease-monkey/other-resources/kitchen-fixtures.html).
 
 ```bash
 /api/projects/1320?fixtures=true

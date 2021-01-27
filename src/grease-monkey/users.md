@@ -379,7 +379,7 @@ This defaults to false because of the large amount of information that is includ
 /api/users/60?contacts=true
 ```
 
-Also [see Jurisdiction Contacts](/grease-monkey/other-resources/jurisdiction-contacts)
+Also [see Jurisdiction Contacts](/grease-monkey/other-resources/jurisdiction-contacts.html)
 
 ### Other Parameters
 
