@@ -8,7 +8,7 @@ sidebarDepth: 3
 
 This object references a project *(or sizing)* within Grease Monkey. You can retrieve a list of projects within Grease Monkey.
 
-You can also view more detailed information about an individual project and all of the attributing factors (kitchen fixtures, spaces, etc).
+You can also view more detailed information about an individual project and all the attributing factors (kitchen fixtures, spaces, etc).
 
 ## Base Endpoints
 
