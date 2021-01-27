@@ -54,11 +54,11 @@ GET /api/jurisdictions/:id
   "contacts": [
     {
       "id": 107,
-      "name": "Sandra *****",
-      "first_name": "Sandra",
+      "name": "****** *****",
+      "first_name": "******",
       "last_name": "*****",
       "title": "Environmental Service & Pretreatment Specialist",
-      "email": "*****@victoriatx.org",
+      "email": "*****@******.org",
       "primary_phone_number": "*****",
       "department": "Wastewater/FOG Specific Authority",
       "jurisdictions": [
