@@ -149,17 +149,17 @@ module.exports = {
   /**
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
    */
-  plugins: [
-    '@vuepress/plugin-back-to-top',
-    '@vuepress/plugin-medium-zoom',
-    '@vuepress/last-updated',
-    {
+  plugins: {
+    '@vuepress/plugin-back-to-top': {},
+    '@vuepress/medium-zoom': {
+      selector: '.theme-default-content img'
+    },
+    '@vuepress/last-updated': {
       transformer: (timestamp, lang) => {
-        // Don't forget to install moment yourself
         const moment = require('moment')
         moment.locale(lang)
         return moment(timestamp).fromNow()
       }
     }
-  ]
+  }
 }
