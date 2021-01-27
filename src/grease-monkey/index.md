@@ -25,6 +25,6 @@ Refer to [Basics - Authentication](/basics/#authentication)
 
 All requests made to the Grease Monkey API(s) will be made to the following base url:
 
-``` uri
+``` http
 https://app.greasemonkeysizing.com
 ```

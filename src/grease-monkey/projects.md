@@ -469,7 +469,7 @@ If the jurisdiction in which the project resides has unique requirements; preven
 
 Returns a list of projects from Grease Monkey with related engineer and jurisdiction information.
 
-``` uri
+``` http
 GET /api/projects
 ```
 
@@ -481,13 +481,13 @@ GET /api/projects
 
 Projects filtered by the zip code provided in the location's address. This parameter can be either a single zip code (as a string):
 
-``` uri
+``` http
 /api/projects?zip_codes=64108
 ```
 
 or an array of zip codes:
 
-``` uri
+``` http
 /api/projects?zip_codes[]=64108&zip_codes[]=66061
 ```
 
@@ -497,13 +497,13 @@ or an array of zip codes:
 
 Projects filtered by their specified construction type. This parameter can be either a single type (as a string):
 
-``` uri
+``` http
 /api/projects?types=newConstruction
 ```
 
 or an array of types:
 
-``` uri
+``` http
 /api/users?types[]=newConstruction&types[]=tenantFinish
 ```
 
@@ -524,7 +524,7 @@ or an array of types:
 
 Returns an individual project identified by ID
 
-``` uri
+``` http
 GET /api/projects/:id
 ```
 
@@ -538,7 +538,7 @@ If you would like to include the project's Schier Admin-generated notes.
 
 [Also see Notes](/grease-monkey/other-resources/notes.html)
 
-``` uri
+``` http
 /api/projects/1320?notes=true
 ```
 
@@ -552,7 +552,7 @@ This defaults to false because of the large amount of information that can be in
 
 If you would like to include the list of recommended, compatible accessories for this project. 
 
-``` uri
+``` http
 /api/projects/1320?accessories=true
 ```
 
@@ -570,7 +570,7 @@ If you would like to include the list of kitchen fixtures and their detailed inf
 
 Also [see Kitchen Fixtures](/grease-monkey/other-resources/kitchen-fixtures.html).
 
-``` uri
+``` http
 /api/projects/1320?fixtures=true
 ```
 

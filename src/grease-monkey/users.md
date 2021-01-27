@@ -64,7 +64,7 @@ The number of projects that the user has created within Grease Monkey
 
 Returns a list of users from Grease Monkey with some personal information and the number of projects that they have created.
 
-``` uri
+``` http
 GET /api/users
 ```
 
@@ -76,13 +76,13 @@ GET /api/users
 
 Users filtered by their specified zip code in their profile. This parameter can be either a single zip code (as a string):
 
-``` uri
+``` http
 /api/users?zip_codes=64108
 ```
 
 or an array of zip codes:
 
-``` uri
+``` http
 /api/users?zip_codes[]=64108&zip_codes[]=66061
 ```
 
@@ -92,13 +92,13 @@ or an array of zip codes:
 
 Users filtered by their specified user type. This parameter can be either a single type (as a string):
 
-``` uri
+``` http
 /api/users?types=distributor
 ```
 
 or an array of types:
 
-``` uri
+``` http
 /api/users?types[]=distributor&types[]=engineerArchitect
 ```
 
@@ -165,7 +165,7 @@ or an array of types:
 
 Returns an individual user identified by ID 
 
-``` uri
+``` http
 GET /api/users/:id
 ```
 
@@ -177,7 +177,7 @@ GET /api/users/:id
 
 If you would like to include the user's projects ([view the Project object](./projects.html#base-project-object)) as part of the result, include this parameter.
 
-``` uri
+``` http
 /api/users/60?projects=true
 ```
 
@@ -379,7 +379,7 @@ When a project is linked to a jurisdiction *(or AHJ)*, a `jurisdiction` JSON obj
 This defaults to false because of the large amount of information that is included with this response.
 :::
 
-``` uri
+``` http
 /api/users/60?contacts=true
 ```
 
