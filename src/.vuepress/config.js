@@ -141,7 +141,23 @@ module.exports = {
         title: 'Product',
         path: '/product/',
         collapsable: false,
-        children: []
+        children: [
+          {
+            title: 'About Product API',
+            path: '/product/',
+          },
+          '/product/product-types',
+          '/product/products',
+          '/product/collections',
+          {
+            title: 'Other Resources',
+            path: '/product/other-resources/',
+            // collapsable: false,
+            children: [
+              '/product/other-resources/flow-rating',
+            ],
+          }
+        ]
       }
     ],
   },

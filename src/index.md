@@ -18,5 +18,8 @@ features:
     link: /territory/
 - title: Product API
   details: Get Schier's current product offering, images, documents and all other associated information
+  link:
+    text: View Documentation
+    link: /product/
 footer: 2021 Schier Products Company, Inc. All rights reserved.
 ---
