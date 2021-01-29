@@ -120,7 +120,7 @@ module.exports = {
       {
         title: 'SDKs',
         path: '/sdks/',
-        collapsable: false,
+        collapsable: true,
         children: [
           {
             title: 'Product API',
