@@ -113,6 +113,18 @@ This will publish this package's configuration file `product-api.php` to your ap
 php artisan vendor:publish --provider="SchierProducts\SchierProductApi\SchierProductApiServiceProvider"
 ```
 
+## Exceptions
+
+While using this package, based on the server response, it is possible for your application to retrieve any of the following exceptions:
+
+* `Exception\InvalidRequestException` - The route/resource is not found
+* `Exception\InvalidArgumentException` - The provided parameters for the requested resource are incorrectly formatted or are not supported.
+* `Exception\AuthenticationException` - The API key is empty or is not correct
+* `Exception\PermissionException` - The API key is valid, but does not have permission to access the requested content
+* `Exception\RateLimitException` - Your use of the API has exceeded the defined the limit. Please wait before requesting additional content
+* `Exception\ApiConnectionException` - If the API service that provides the API cannot be reached
+* `Exception\UnknownApiErrorException` - A general, catch-all error for any other issues
+
 ## Lists
 
 When a list of resources are retrieved from the API, they are parsed and returned within an instance of `SchierProducts\SchierProductApi\Collection`. This class exposes a few methods for you to sort through the results.
@@ -130,62 +142,118 @@ Below are a list of resources/data that you can retrieve via this package:
 
 ### Product Types
 
+[Also see Product Types](/product/product-types.html#the-product-type-object).
+
 #### List of product types
 
-Via the client *(assuming you have already called the constructor)*:
+*(Assuming you have already called the constructor)*:
 
 ```php
 $productTypes = $productApiClient->productTypes->all();
-```
 
-Via the facade:
-
-```php
+// via the facade
 $productTypes = \ProductApi::productTypes->all();
 ```
 
 #### A specific product type
 
-Via the client *(assuming you have already called the constructor)*:
+*(Assuming you have already called the constructor)*:
 
 ```php
 $samplingPort = $productApiClient->productTypes->retrieve('sampling_port');
-```
 
-Via the facade:
-
-```php
+// via the facade
 $samplingPort = \ProductApi::productTypes->retrieve('sampling_port');
 ```
 
 #### A list of products within a product type
 
-Via the client *(assuming you have already called the constructor)*:
-
 ```php
 $samplingPortProducts = $productApiClient->productTypes->products('sampling_port');
-```
 
-Via the facade:
-
-```php
+// via the facade
 $samplingPortProducts = \ProductApi::productTypes->products('sampling_port');
 ```
 
 #### A list of products from a product type
 
-Via the client *(assuming you have already called the constructor)*:
+*(Assuming you have already called the constructor)*:
 
 ```php
 $productTypes = $productApiClient->productTypes->all();
 $firstProductType = $products->first();
 $products = $firstProductType->products();
-```
 
-Via the facade:
-
-```php
+// via the facade
 $productTypes = \ProductApi::productTypes->all();
 $firstProductType = $products->first();
 $products = $firstProductType->products();
+```
+
+### Products
+
+[Also see Products](/product/products.html#the-product-object).
+
+#### List of products
+
+*(Assuming you have already called the constructor)*:
+
+```php
+$products = $productApiClient->products->all();
+
+// via the facade
+$products = \ProductApi::products->all();
+```
+
+#### Get a product by model number
+
+*(Assuming you have already called the constructor)*:
+
+```php
+$products = $productApiClient->products->retrieve('8030-003-01');
+
+// via the facade
+$products = \ProductApi::products->retrieve('8030-003-01');
+```
+
+::: tip Note
+The information returned by this response can be somewhat large due to the inclusion of accessories, kitchen fixtures, etc.
+:::
+
+### Collections
+
+[Also see Collections](/product/collections.html#the-collection-object).
+
+#### List of collections
+
+*(Assuming you have already called the constructor)*:
+
+```php
+$collections = $productApiClient->collections->all();
+
+// via the facade
+$collections = \ProductApi::collections->all();
+```
+
+##### Available filters/parameters
+
+`only` - *string, string[]*
+
+Provide a single or array of keys to return only the collections identified by the such keys.
+
+`limit` - *integer, default 25*
+
+Limit the number of response that are returned. **The default is 25 collections.**
+
+[Also see Collections - Parameters](/product/collections.html#parameters).
+
+#### Get a collection and it's products
+
+*(Assuming you have already called the constructor)*:
+
+```php
+$collection = $productApiClient->collections->retrieve('gb-1');
+
+// via the facade
+$collection = \ProductApi::collections->retrieve('gb-1');
 ```

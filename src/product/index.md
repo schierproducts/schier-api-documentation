@@ -26,3 +26,7 @@ All requests made to the Product API will be made to the following base url:
 ``` http
 https://api.schierproducts.com
 ```
+
+## Available SDKs
+
+* [PHP (with Laravel support)](/sdks/products/php.html)
