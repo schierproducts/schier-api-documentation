@@ -66,6 +66,16 @@ module.exports = {
         ]
       },
       {
+        text: 'SDK\'s',
+        ariaLabel: 'SDK\'s Reference Menu',
+        items: [
+          {
+            text: 'Product',
+            link: '/sdks/products/'
+          },
+        ]
+      },
+      {
         text: 'Packages',
         ariaLabel: 'Packages Menu',
         items: [
@@ -108,9 +118,25 @@ module.exports = {
         ],
       },
       {
+        title: 'SDKs',
+        path: '/sdks/',
+        collapsable: false,
+        children: [
+          {
+            title: 'Product API',
+            path: `/sdks/products/`,
+            children: [
+              {
+                title: `PHP`,
+                path: `/sdks/products/php`
+              }
+            ],
+          }
+        ]
+      },
+      {
         title: 'Grease Monkey',
         path: '/grease-monkey/',
-        collapsable: false,
         children: [
           {
             title: 'About Grease Monkey API',
@@ -135,12 +161,10 @@ module.exports = {
       {
         title: 'Territory',
         path: '/territory/',
-        collapsable: false,
       },
       {
         title: 'Product',
         path: '/product/',
-        collapsable: false,
         children: [
           {
             title: 'About Product API',
@@ -158,7 +182,7 @@ module.exports = {
             ],
           }
         ]
-      }
+      },
     ],
   },
 

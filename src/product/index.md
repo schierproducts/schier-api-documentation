@@ -8,7 +8,7 @@ description: The Schier Product API provides users with the ability to query all
 
 The Schier Product API provides users with the ability to query all current/active products from Schier's product catalog and then filter them based on product type, etc.
 
-Furthermore this API provides:
+Further more this API provides:
 
 * Pricing
 * Product dimensions in multiple formats and standards
