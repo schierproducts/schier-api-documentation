@@ -13,6 +13,7 @@ You can also view more information about an individual user and all of their res
 
 ``` http
 GET /api/users
+POST /api/users-by-zip-code
 GET /api/users/:id
 ```
 
@@ -24,6 +25,7 @@ When retrieve a list of users, the amount of meta that is returned via the API i
 {
   "object": "user",
   "url": "/api/users/2838",
+  "id": 2838,
   "grease_monkey_user": true,
   "name": "***** ******",
   "email": "****@*****.edu",
@@ -69,22 +71,6 @@ GET /api/users
 ```
 
 ### Parameters
-
-#### zip_codes
-
-<span class="code-note block">optional, array or string</span>
-
-Users filtered by their specified zip code in their profile. This parameter can be either a single zip code (as a string):
-
-``` http
-/api/users?zip_codes=64108
-```
-
-or an array of zip codes:
-
-``` http
-/api/users?zip_codes[]=64108&zip_codes[]=66061
-```
 
 #### types
 
@@ -161,6 +147,20 @@ or an array of types:
 }
 ```
 
+## Users by Zip Code List
+
+``` http
+POST /api/users-by-zip-code
+```
+
+### Properties
+
+#### zip_codes
+
+<span class="code-note block">required, array or string</span>
+
+Users filtered by their specified zip code in their profile. This property can be either a single zip code (as a string):
+
 ## User
 
 Returns an individual user identified by ID 
@@ -192,6 +192,7 @@ This defaults to false because of the large amount of information that is includ
   "object": "user",
   "url": "/api/users/60?projects=true",
   "grease_monkey_user": true,
+  "id": 60,
   "name": "*****",
   "email": "*****@schierproducts.com",
   "phone_number": "*****",
