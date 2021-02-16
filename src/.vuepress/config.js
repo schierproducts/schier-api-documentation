@@ -33,6 +33,7 @@ module.exports = {
     [
       'script', {}, `window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-7WJY8LHWQZ');`
     ],
+    // ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css'} ],
   ],
 
   /**
@@ -46,10 +47,10 @@ module.exports = {
     editLinkText: '',
     lastUpdated: true,
     logo: '/assets/img/schier-logo-pioneer.svg',
-    // algolia: {
-    //   apiKey: 'd47b768e5920983964f1fbbca40b3611',
-    //   indexName: 'documentation-pages'
-    // },
+    algolia: {
+      apiKey: 'bea1ae4fd8e0fcccb234cbf98969b6bc',
+      indexName: 'schierproducts'
+    },
     nav: [
       {
         text: 'API Reference',
