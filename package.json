@@ -1,7 +1,7 @@
 {
   "name": "schier-api-documentation",
   "version": "0.0.1",
-  "description": "Documentation repository for Schier Products&#39; various digital IP and API documentation.",
+  "description": "Documentation repository for Schier Products'; various digital IP and API documentation.",
   "main": "index.js",
   "authors": [
     {

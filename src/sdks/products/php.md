@@ -67,7 +67,7 @@ Schier will always use the most recent version of the API. However if you are tr
 
 To set the API key that this package uses to authenticate your requests, add the following entry to your app's environment files:
 
-```dotenv
+```
 SCHIER_PRODUCT_API_KEY=<YOUR API KEY>
 ```
 
@@ -75,13 +75,13 @@ SCHIER_PRODUCT_API_KEY=<YOUR API KEY>
 
 ##### Other Variables
 
-```dotenv
+```
 SCHIER_PRODUCT_API_BASE
 ```
 
 If you are trying to connect to another environment other than the default production environment, define the base here. FOR TESTING ONLY!!!
 
-```dotenv
+```
 SCHIER_PRODUCT_API_VERSION
 ```
 

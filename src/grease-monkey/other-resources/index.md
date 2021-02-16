@@ -1,6 +1,6 @@
 ---
 description: The Grease Monkey API(s) utilizes a few other resources to provide extracted information based on the type of request and the provided parameters.
-prev: /grease-monkey/jurisdictions
+prev: /grease-monkey/search.html
 ---
 
 # Other Resources

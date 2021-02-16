@@ -33,7 +33,6 @@ module.exports = {
     [
       'script', {}, `window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-7WJY8LHWQZ');`
     ],
-    // ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css'} ],
   ],
 
   /**
@@ -146,6 +145,7 @@ module.exports = {
           '/grease-monkey/users',
           '/grease-monkey/projects',
           '/grease-monkey/jurisdictions',
+          '/grease-monkey/search',
           {
             title: 'Other Resources',
             path: '/grease-monkey/other-resources/',
