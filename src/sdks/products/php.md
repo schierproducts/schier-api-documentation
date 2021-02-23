@@ -152,7 +152,7 @@ Below are a list of resources/data that you can retrieve via this package:
 $productTypes = $productApiClient->productTypes->all();
 
 // via the facade
-$productTypes = \ProductApi::productTypes->all();
+$productTypes = \ProductApi::productTypes()->all();
 ```
 
 #### A specific product type
@@ -163,7 +163,7 @@ $productTypes = \ProductApi::productTypes->all();
 $samplingPort = $productApiClient->productTypes->retrieve('sampling_port');
 
 // via the facade
-$samplingPort = \ProductApi::productTypes->retrieve('sampling_port');
+$samplingPort = \ProductApi::productTypes()->retrieve('sampling_port');
 ```
 
 #### A list of products within a product type
@@ -172,7 +172,7 @@ $samplingPort = \ProductApi::productTypes->retrieve('sampling_port');
 $samplingPortProducts = $productApiClient->productTypes->products('sampling_port');
 
 // via the facade
-$samplingPortProducts = \ProductApi::productTypes->products('sampling_port');
+$samplingPortProducts = \ProductApi::productTypes()->products('sampling_port');
 ```
 
 #### A list of products from a product type
@@ -185,7 +185,7 @@ $firstProductType = $products->first();
 $products = $firstProductType->products();
 
 // via the facade
-$productTypes = \ProductApi::productTypes->all();
+$productTypes = \ProductApi::productTypes()->all();
 $firstProductType = $products->first();
 $products = $firstProductType->products();
 ```
@@ -202,7 +202,7 @@ $products = $firstProductType->products();
 $products = $productApiClient->products->all();
 
 // via the facade
-$products = \ProductApi::products->all();
+$products = \ProductApi::products()->all();
 ```
 
 #### Get a product by model number
@@ -213,7 +213,7 @@ $products = \ProductApi::products->all();
 $products = $productApiClient->products->retrieve('8030-003-01');
 
 // via the facade
-$products = \ProductApi::products->retrieve('8030-003-01');
+$products = \ProductApi::products()->retrieve('8030-003-01');
 ```
 
 ::: tip Note
@@ -232,7 +232,7 @@ The information returned by this response can be somewhat large due to the inclu
 $collections = $productApiClient->collections->all();
 
 // via the facade
-$collections = \ProductApi::collections->all();
+$collections = \ProductApi::collections()->all();
 ```
 
 ##### Available filters/parameters
@@ -255,5 +255,5 @@ Limit the number of response that are returned. **The default is 25 collections.
 $collection = $productApiClient->collections->retrieve('gb-1');
 
 // via the facade
-$collection = \ProductApi::collections->retrieve('gb-1');
+$collection = \ProductApi::collections()->retrieve('gb-1');
 ```
