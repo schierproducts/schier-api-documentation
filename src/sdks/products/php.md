@@ -152,7 +152,7 @@ Below are a list of resources/data that you can retrieve via this package:
 $productTypes = $productApiClient->productTypes->all();
 
 // via the facade
-$productTypes = \ProductApi::productTypes()->all();
+$productTypes = \ProductApi::productTypes();
 ```
 
 #### A specific product type
@@ -185,7 +185,7 @@ $firstProductType = $products->first();
 $products = $firstProductType->products();
 
 // via the facade
-$productTypes = \ProductApi::productTypes()->all();
+$productTypes = \ProductApi::productTypes();
 $firstProductType = $products->first();
 $products = $firstProductType->products();
 ```
@@ -202,7 +202,7 @@ $products = $firstProductType->products();
 $products = $productApiClient->products->all();
 
 // via the facade
-$products = \ProductApi::products()->all();
+$products = \ProductApi::products();
 ```
 
 #### Get a product by model number
@@ -232,7 +232,7 @@ The information returned by this response can be somewhat large due to the inclu
 $collections = $productApiClient->collections->all();
 
 // via the facade
-$collections = \ProductApi::collections()->all();
+$collections = \ProductApi::collections();
 ```
 
 ##### Available filters/parameters
