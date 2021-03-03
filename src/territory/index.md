@@ -52,7 +52,7 @@ This object references a specific sales territory within the Schier Rep Network.
 {
   "object": "territory",
   "url": "/territory/15",
-  "id": "/territory/15",
+  "id": 15,
   "name": null,
   "code": "NCSC",
   "rep_firm": "Schier",
@@ -122,7 +122,7 @@ GET /territories
     {
       "object": "territory",
       "url": "/territory/1",
-      "id": "/territory/1",
+      "id": 1,
       "name": null,
       "code": "AB N",
       "rep_firm": "Schier",
@@ -134,7 +134,7 @@ GET /territories
     {
       "object": "territory",
       "url": "/territory/2",
-      "id": "/territory/2",
+      "id": 2,
       "name": null,
       "code": "AB S",
       "rep_firm": "Kern Industries",
