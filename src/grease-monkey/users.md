@@ -35,6 +35,8 @@ When retrieve a list of users, the amount of meta that is returned via the API i
   "postal_code": "33143",
   "type": null,
   "registered": "10/13/2019",
+  "last_active": "10/13/2019",
+  "updated": "10/13/2019",
   "number_of_projects": 1
 }
 ```
@@ -113,6 +115,8 @@ or an array of types:
       "postal_code": "64108",
       "type": "Engineer / Architect",
       "registered": "01/08/2019",
+      "last_active": "10/13/2019",
+      "updated": "10/13/2019",
       "number_of_projects": 4
     },
     {
@@ -127,6 +131,8 @@ or an array of types:
       "postal_code": "64108",
       "type": "Engineer / Architect",
       "registered": "09/25/2020",
+      "last_active": "09/25/2020",
+      "updated": "09/25/2020",
       "number_of_projects": 1
     },
     {
@@ -141,6 +147,8 @@ or an array of types:
       "postal_code": "64108",
       "type": "Engineer / Architect",
       "registered": "05/08/2018",
+      "last_active": "05/08/2018",
+      "updated": "05/08/2018",
       "number_of_projects": 20
     },
   ...
@@ -200,7 +208,9 @@ This defaults to false because of the large amount of information that is includ
   "company": "Schier",
   "postal_code": "66223",
   "type": "Schier Employee",
-  "registered": "02/13/2018",
+  "registered": "09/25/2020",
+  "last_active": "09/25/2020",
+  "updated": "09/25/2020",
   "number_of_projects": 327,
   "projects": {
     "object": "list",
