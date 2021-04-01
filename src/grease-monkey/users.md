@@ -37,7 +37,8 @@ When retrieve a list of users, the amount of meta that is returned via the API i
   "registered": "10/13/2019",
   "last_active": "10/13/2019",
   "updated": "10/13/2019",
-  "number_of_projects": 1
+  "number_of_projects": 1,
+  "number_of_pre_approval_projects": 1
 }
 ```
 
@@ -63,6 +64,10 @@ The first value in the list above is the key that should be used. The second val
 `number_of_projects` <span class="code-note">default: 0, integer</span>
 
 The number of projects that the user has created within Grease Monkey
+
+`number_of_pre_approval_projects` <span class="code-note">default: 0, integer</span>
+
+The number of projects that the user has created within Grease Monkey that have requested PreApproval
 
 ## List of Users
 
@@ -117,7 +122,8 @@ or an array of types:
       "registered": "01/08/2019",
       "last_active": "10/13/2019",
       "updated": "10/13/2019",
-      "number_of_projects": 4
+      "number_of_projects": 4,
+      "number_of_pre_approval_projects": 4
     },
     {
       "object": "user",
@@ -133,7 +139,8 @@ or an array of types:
       "registered": "09/25/2020",
       "last_active": "09/25/2020",
       "updated": "09/25/2020",
-      "number_of_projects": 1
+      "number_of_projects": 1,
+      "number_of_pre_approval_projects": 0
     },
     {
       "object": "user",
@@ -149,7 +156,8 @@ or an array of types:
       "registered": "05/08/2018",
       "last_active": "05/08/2018",
       "updated": "05/08/2018",
-      "number_of_projects": 20
+      "number_of_projects": 20,
+      "number_of_projects": 12
     },
   ...
 }
@@ -212,6 +220,7 @@ This defaults to false because of the large amount of information that is includ
   "last_active": "09/25/2020",
   "updated": "09/25/2020",
   "number_of_projects": 327,
+  "number_of_pre_approval_projects": 286,
   "projects": {
     "object": "list",
     "url": "/api/projects",
