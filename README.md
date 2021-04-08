@@ -1,4 +1,4 @@
-![Build Status](https://app.chipperci.com/projects/b4ee76e4-2f6a-4e03-a2be-f7d1e69d0d8f/status/master)
+[![buddy pipeline](https://app.buddy.works/schierproducts/schier-api-documentation/pipelines/pipeline/320460/badge.svg?token=d8b7cd656f6e7fbdf1dd448778018de722743797c0c4eaf4d78c7696514ffe15 "buddy pipeline")](https://app.buddy.works/schierproducts/schier-api-documentation/pipelines/pipeline/320460)
 
 # Schier API Documentation
 
