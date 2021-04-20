@@ -174,6 +174,7 @@ module.exports = {
           '/product/product-types',
           '/product/products',
           '/product/collections',
+          '/product/processing',
           {
             title: 'Other Resources',
             path: '/product/other-resources/',
