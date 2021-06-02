@@ -26,6 +26,7 @@ GET /api/jurisdictions/:id
   "last_updated": "05/28/2020",
   "number_of_projects": 11,
   "plumbing_code": null,
+  "relationship_status": "Limited Approval",
   "indoor": {
     "sizing_method": "ASME",
     "sizing_location_limited": false,
@@ -113,6 +114,10 @@ The number of projects that have been created within this jurisdiction
 
 ::: details plumbing_code <span class="code-note">optional, string</span>
 If there is a global plumbing code that this jurisdiction adheres to, it will be described here.
+:::
+
+::: details relationship_status <span class="code-note">string</span>
+This jurisdiction's opinion/status of GPSM (Grease Production Sizing Method) and Schier's hydro mechanical product line
 :::
 
 ::: details indoor/outdoor <span class="code-note">object</span>
