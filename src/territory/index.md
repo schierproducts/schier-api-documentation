@@ -176,7 +176,7 @@ A territory can be requested by appending a url-encoded zip code to the url:
 GET /territory?zip_code=64108
 ```
 
-#### By Zip Code
+#### By County and State
 
 A territory can be requested by appending a combined, url-encoded state and county name:
 
@@ -186,4 +186,8 @@ GET /territory?state=kansas&county=johnson
 
 ::: tip Note
 When inputing the county name, you can either use the full county name or the base; which is the name of the county without the "County" suffix.
+:::
+
+::: tip Note
+When inputing the state/region name, you can either use the full state/region name or the two-letter abbreviation. Letter case or capitalization do not matter.
 :::
