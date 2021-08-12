@@ -412,3 +412,15 @@ The pagination parameters used with the listing request can also be used here du
 `limit` <span class="code-note">optional, default: 25</span>
 
 `offset` <span class="code-note">optional, default: 0</span>
+
+## User by Email Address
+
+Returns an individual user identified by their email address
+
+``` http
+GET /api/user-by-email/:email address
+```
+
+::: tip Note
+This request returns the [same response as the User by ID request](#parameters-2). This is just an alternate way of fetching a user's information.
+:::
