@@ -362,11 +362,15 @@ The name of the associated product type [See Product Type](./product-types)
 :::
 
 ::: details part_number <span class="code-note">string</span>
-The unique, Schier-assigned model number for this product and it's customization.
+The unique, Schier-assigned model number for this product and it's variant.
 :::
 
 ::: details store_id <span class="code-note">optional, string</span>
 The id of this product as it resides within the Schier eCommerce platforms and associated APIs.
+:::
+
+::: details parent_store_id <span class="code-note">optional, string</span>
+If the product that you are trying to retrieve is a variant of the parent, this is the parent's product id.
 :::
 
 ::: details description <span class="code-note">string</span>

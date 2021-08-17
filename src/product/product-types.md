@@ -184,6 +184,7 @@ Due to the large amount of information that is provided by this API for each pro
       "type": "Hydromechanical Grease Interceptor",
       "part_number": "4025-XXX-01",
       "store_id": "151",
+      "parent_store_id": "86",
       "description": "The GB-50 offers best-in-class certified grease capacity with 20% kitchen solids waste capacity. The unit does not require flow control, and it is first in the industry certified to Type D of the ASME standard.\nCompatible with the Safety Star® access restrictor prevents accidental entry. It is made of rugged polyethylene and fits through 36\" doorways. Use cast iron covers for outdoor installations, H-20 rated. Use composite covers for indoor installations, traffic load rated. The GB-50 uses FCR2 field cut riser system for below-grade installations and CA2 adapters for below-grade installations using 24\" corrugated pipe risers.",
       "short_description": "50 GPM; 439.5 lbs. grease capacity. Can be installed indoors or outdoors.",
       "images": {
