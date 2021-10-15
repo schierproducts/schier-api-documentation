@@ -25,6 +25,10 @@ GET /products/:model-number
   "short_name": "GB-250",
   "type": "Hydromechanical Grease Interceptor",
   "part_number": "4055-007-02",
+  "base_model": {
+    "is_base_model": true,
+    "base_part_number": "4055-007-02"
+  },
   "store_id": "488",
   "description": "Great Basin Series Grease Interceptor ASME Certified to 100 gpm with 1,895 lbs grease storage capacity and 200 gpm with 1,196 lbs grease storage capacity. 4\" female thread fittings with (2) 4\" plain end adapter fittings, built-in flow control, built-in triple inlet and outlet, two built-in 4\" adjustable cover adapters, Safety StarTM access restrictor and two H20 load rated cast iron covers (proof load tested to 40,000 lbs.). Lifetime Warranty. Made in the USA.",
   "short_description": "100/200 GPM Great Basin Indoor/Outdoor High Capacity Grease Interceptor",
@@ -363,6 +367,10 @@ The name of the associated product type [See Product Type](./product-types)
 
 ::: details part_number <span class="code-note">string</span>
 The unique, Schier-assigned model number for this product and it's variant.
+:::
+
+::: details base_model <span class="code-note">object</span>
+If the queried product has multiple variants, notifies the user that the product is or is not the default product and provides the associated model number to retrieve the default product.
 :::
 
 ::: details store_id <span class="code-note">optional, string</span>
