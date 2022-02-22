@@ -49,6 +49,13 @@ GET /products/:model-number
       "object": "image-library"
     }
   },
+  "processing": {
+    "object": "awareness-product",
+    "url": "/processing?product=GB-250",
+    "name": "GB-250",
+    "lead_time": 6,
+    "threshold": 12
+  },
   "price": {
     "list": "6,194.00",
     "retail": {
@@ -419,6 +426,20 @@ Within each of these groups, 4 different images are available in 4 different dim
     "sm": "https://schier-resources.s3.us-east-2.amazonaws.com/product-photos/gb-250/gb-250_2_sm.jpg",
     "object": "image-library"
   }
+}
+```
+:::
+
+::: details processing <span class="code-note">optional, object</span>
+The current lead/processing time of each of Schier's products needed to construct the product and make it ready for shipment
+
+```json
+{
+  "object": "awareness-product",
+  "url": "/processing?product=GB-250",
+  "name": "GB-250",
+  "lead_time": 6,
+  "threshold": 12
 }
 ```
 :::
