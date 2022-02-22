@@ -213,7 +213,7 @@ $products = \ProductApi::products();
 $products = $productApiClient->products->retrieve('8030-003-01');
 
 // via the facade
-$products = \ProductApi::products()->retrieve('8030-003-01');
+$products = \ProductApi::products('8030-003-01');
 ```
 
 ::: tip Note
