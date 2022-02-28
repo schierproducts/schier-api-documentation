@@ -308,6 +308,8 @@ GET /products/:model-number
         "id": 1,
         "name": "4\" Plain End Inlet/Outlet",
         "price": "0.00",
+        "option_type": "connection",
+        "description": "A 4\" inlet\/outlet",
         "store_id": null,
         "object": "product-option"
       },
@@ -315,6 +317,8 @@ GET /products/:model-number
         "id": 16,
         "name": "H-20 Rated Pickable Cast Iron Cover",
         "price": "0.00",
+        "option_type": "cover",
+        "description": null,
         "store_id": null,
         "object": "product-option"
       }
@@ -518,6 +522,8 @@ A list of attachments (cover, inlet, outlet, etc) that make a unique combination
       "id": 1,
       "name": "4\" Plain End Inlet/Outlet",
       "price": "0.00",
+      "option_type": "connection",
+      "description": "A 4\" inlet\/outlet",
       "store_id": null,
       "object": "product-option"
     },
@@ -525,6 +531,8 @@ A list of attachments (cover, inlet, outlet, etc) that make a unique combination
       "id": 16,
       "name": "H-20 Rated Pickable Cast Iron Cover",
       "price": "0.00",
+      "option_type": "cover",
+      "description": null,
       "store_id": null,
       "object": "product-option"
     }
