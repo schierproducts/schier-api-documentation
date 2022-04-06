@@ -32,6 +32,7 @@ GET /products/:model-number
   "store_id": "488",
   "description": "Great Basin Series Grease Interceptor ASME Certified to 100 gpm with 1,895 lbs grease storage capacity and 200 gpm with 1,196 lbs grease storage capacity. 4\" female thread fittings with (2) 4\" plain end adapter fittings, built-in flow control, built-in triple inlet and outlet, two built-in 4\" adjustable cover adapters, Safety StarTM access restrictor and two H20 load rated cast iron covers (proof load tested to 40,000 lbs.). Lifetime Warranty. Made in the USA.",
   "short_description": "100/200 GPM Great Basin Indoor/Outdoor High Capacity Grease Interceptor",
+  "market_specific_description": "75 GPM, 277-gallon grease interceptor intended for Miami DERM market",
   "images": {
     "object": "product-image-library",
     "primary": {
@@ -398,6 +399,10 @@ The full-length product description that includes various specifications and any
 
 ::: details short_description <span class="code-note">optional, string</span>
 A short description with a limited number of characters that contains a concise, marketing-based description of the product.
+:::
+
+::: details market_specific_description <span class="code-note">optional, string</span>
+A short description that contains some information regarding the product's use/implementation within a specific market/AHJ/etc.
 :::
 
 ::: details images <span class="code-note">object</span>
