@@ -302,6 +302,103 @@ GET /products/:model-number
       }
     }
   },
+  "related_products": {
+    "object": "list",
+    "data": [
+      {
+        "id": 49,
+        "name": "GB-250-250HF",
+        "short_name": "GB-250-250HF",
+        "type": "Hydromechanical Grease Interceptor",
+        "part_number": "4055-XXY-02",
+        "short_description": "250 GPM Great Basin™ Indoor/Outdoor High Flow Grease Interceptor",
+        "market_specific_description": "250 GPM, 277-gallon grease interceptor intended for Vancouver, British Columbia market",
+        "store_id": "244",
+        "link": "https://schierproducts.com/gb-250-250hf/",
+        "price": {
+          "list": "6,920.00",
+          "retail": {
+            "multiplier": 0.61,
+            "price": "4,221.20",
+            "object": "price"
+          },
+          "wholesale": {
+            "multiplier": 0.55,
+            "price": "3,806.00",
+            "object": "price"
+          },
+          "object": "product-price"
+        },
+        "images": {
+          "object": "product-image-library",
+          "primary": {
+            "orig": "hhttps://schier-resources.s3.us-east-2.amazonaws.com/product-photos/gb-250-250hf/gb-250-250hf_1.jpg",
+            "lg": "hhttps://schier-resources.s3.us-east-2.amazonaws.com/product-photos/gb-250-250hf/gb-250-250hf_1_lg.jpg",
+            "md": "hhttps://schier-resources.s3.us-east-2.amazonaws.com/product-photos/gb-250-250hf/gb-250-250hf_1_md.jpg",
+            "sm": "hhttps://schier-resources.s3.us-east-2.amazonaws.com/product-photos/gb-250-250hf/gb-250-250hf_1_sm.jpg",
+            "object": "image-library"
+          },
+          "dimension": {
+            "orig": "hhttps://schier-resources.s3.us-east-2.amazonaws.com/product-photos/gb-250-250hf/gb-250-250hf_2.jpg",
+            "lg": "hhttps://schier-resources.s3.us-east-2.amazonaws.com/product-photos/gb-250-250hf/gb-250-250hf_2_lg.jpg",
+            "md": "hhttps://schier-resources.s3.us-east-2.amazonaws.com/product-photos/gb-250-250hf/gb-250-250hf_2_md.jpg",
+            "sm": "hhttps://schier-resources.s3.us-east-2.amazonaws.com/product-photos/gb-250-250hf/gb-250-250hf_2_sm.jpg",
+            "object": "image-library"
+          }
+        },
+        "object": "simple-product"
+      }
+    ]
+  },
+  "accessories": {
+    "object": "list",
+    "data": [
+      {
+        "component": false,
+        "id": 2,
+        "name": "AK1",
+        "short_name": "AK1",
+        "type": "Anchor Kit",
+        "part_number": "8020-001-01",
+        "short_description": "This anchor kit is recommended for installation in high water table conditions to prevent float out.",
+        "market_specific_description": "Anchor kit recommended for installation in high water table conditions to prevent float out. For use with models GB-50, GB-75, GB-250, GB-500, GGI-500, SI-50, SI-75, SI-250 and SI-500.",
+        "store_id": "202",
+        "link": "https://schierproducts.com/ak1/",
+        "price": {
+          "list": "710.00",
+          "retail": {
+            "multiplier": 0.61,
+            "price": "433.10",
+            "object": "price"
+          },
+          "wholesale": {
+            "multiplier": 0.55,
+            "price": "390.50",
+            "object": "price"
+          },
+          "object": "product-price"
+        },
+        "images": {
+          "object": "product-image-library",
+          "primary": {
+            "orig": "https://schier-resources.s3.us-east-2.amazonaws.com/product-photos/ak1/ak1_1.jpg",
+            "lg": "https://schier-resources.s3.us-east-2.amazonaws.com/product-photos/ak1/ak1_1_lg.jpg",
+            "md": "https://schier-resources.s3.us-east-2.amazonaws.com/product-photos/ak1/ak1_1_md.jpg",
+            "sm": "https://schier-resources.s3.us-east-2.amazonaws.com/product-photos/ak1/ak1_1_sm.jpg",
+            "object": "image-library"
+          },
+          "dimension": {
+            "orig": "https://api.schierproducts.com/img/no-image.png",
+            "lg": "https://api.schierproducts.com/img/no-image_lg.png",
+            "md": "https://api.schierproducts.com/img/no-image_md.png",
+            "sm": "https://api.schierproducts.com/img/no-image_sm.png",
+            "object": "image-library"
+          }
+        },
+        "object": "simple-product"
+      }
+    ]
+  },
   "options": {
     "object": "list",
     "data": [
@@ -310,7 +407,7 @@ GET /products/:model-number
         "name": "4\" Plain End Inlet/Outlet",
         "price": "0.00",
         "option_type": "connection",
-        "description": "A 4\" inlet\/outlet",
+        "description": "A 4\" inlet/outlet",
         "store_id": null,
         "object": "product-option"
       },
@@ -516,6 +613,14 @@ The dimensions of the product without packaging. Contains both US standard and m
 The dimensions of the product when it is shipped; including a potential palette. Contains both US standard and metric values.
 :::
 
+::: details related_products <span class="code-note">optional, array</span>
+List of products that have a relationship to the product initially queried; for example: a product that is a market-specific alternate.
+:::
+
+::: details accessories <span class="code-note">optional, array</span>
+List of products that can be attached to the queried product to customize it or modify it's operation.
+:::
+
 ::: details options <span class="code-note">optional, object</span>
 A list of attachments (cover, inlet, outlet, etc) that make a unique combination that drives this product's variant/model number.
 
@@ -528,7 +633,7 @@ A list of attachments (cover, inlet, outlet, etc) that make a unique combination
       "name": "4\" Plain End Inlet/Outlet",
       "price": "0.00",
       "option_type": "connection",
-      "description": "A 4\" inlet\/outlet",
+      "description": "A 4\" inlet/outlet",
       "store_id": null,
       "object": "product-option"
     },
