@@ -31,13 +31,51 @@ GET /api/jurisdictions/:id
     "sizing_method": "ASME",
     "sizing_location_limited": false,
     "flow_rate_to_size_by": "2 Minute",
-    "products_to_recommend": [],
+    "products_to_recommend": [
+      {
+        "id": 13,
+        "name": "GB-1000",
+        "technical_name": "GB-1000 v1",
+        "store_id": 194,
+        "model_number": "4080-202-01",
+        "product_image": "http://grease-monkey.test/storage/W6PLG5nvXfUc7WPRlFPitINhpl729JSCXt2yKOBL.png",
+        "product_page_link": "https://schierproducts.com/gb-1000/"
+      },
+      {
+        "id": 79,
+        "name": "GB-250",
+        "technical_name": "GB-250 v3",
+        "store_id": null,
+        "model_number": "4055-007-02",
+        "product_image": "http://grease-monkey.test/storage/W0hwKWyE8xYMZIC4aM3byyryxgFSARJui93Aoo9K.png",
+        "product_page_link": "https://schierproducts.com/gb-250/"
+      }
+    ],
     "fixtures_statistics_to_show": []
   },
   "outdoor": {
     "sizing_method": "ASME",
     "flow_rate_to_size_by": "2 Minute",
-    "products_to_recommend": [],
+    "products_to_recommend": [
+      {
+        "id": 13,
+        "name": "GB-1000",
+        "technical_name": "GB-1000 v1",
+        "store_id": 194,
+        "model_number": "4080-202-01",
+        "product_image": "http://grease-monkey.test/storage/W6PLG5nvXfUc7WPRlFPitINhpl729JSCXt2yKOBL.png",
+        "product_page_link": "https://schierproducts.com/gb-1000/"
+      },
+      {
+        "id": 79,
+        "name": "GB-250",
+        "technical_name": "GB-250 v3",
+        "store_id": null,
+        "model_number": "4055-007-02",
+        "product_image": "http://grease-monkey.test/storage/W0hwKWyE8xYMZIC4aM3byyryxgFSARJui93Aoo9K.png",
+        "product_page_link": "https://schierproducts.com/gb-250/"
+      }
+    ],
     "fixtures_statistics_to_show": [
       "2 Minute"
     ]
@@ -128,8 +166,24 @@ Specifications that the jurisdiction dictates depending on where the interceptor
     "sizing_method": "ASME",
     "flow_rate_to_size_by": "2 Minute",
     "products_to_recommend": [
-      "GB-75",
-      "GB-250"
+      {
+        "id": 13,
+        "name": "GB-1000",
+        "technical_name": "GB-1000 v1",
+        "store_id": 194,
+        "model_number": "4080-202-01",
+        "product_image": "http://grease-monkey.test/storage/W6PLG5nvXfUc7WPRlFPitINhpl729JSCXt2yKOBL.png",
+        "product_page_link": "https://schierproducts.com/gb-1000/"
+      },
+      {
+        "id": 79,
+        "name": "GB-250",
+        "technical_name": "GB-250 v3",
+        "store_id": null,
+        "model_number": "4055-007-02",
+        "product_image": "http://grease-monkey.test/storage/W0hwKWyE8xYMZIC4aM3byyryxgFSARJui93Aoo9K.png",
+        "product_page_link": "https://schierproducts.com/gb-250/"
+      }
     ],
     "fixtures_statistics_to_show": [
       "2 Minute"
@@ -194,4 +248,26 @@ A "Yes"/"No" indication if this jurisdiction requires a solids interceptor to be
 
 ::: details other_information <span class="code-note">optional, string</span>
 Other HTML-encoded information that may/may not be legacy information from previous versions of Grease Monkey
+:::
+
+## Retrieve Jurisdictions by ID
+
+If you don't want to paginate through all the jurisdiction manually, you have the ability to request a series specific results identified by their unique ID within the database.
+
+To do so, simply provide an encoded array of numeric values to the api; like so:
+
+``` http
+GET /api/jurisdictions?ids[]=3&ids[]=18&ids[]=26&ids[]=29
+```
+
+This would return the following jurisdictions:
+
+* 3 (Miami)
+* 18 (North Davis Sewer District)
+* 26 (Washington Suburban Sanitary Commission)
+* 29 (Redondo Beach)
+* and so on
+
+::: warning Notice
+When using this method of retrieval, the normal pagination parameters (limit, offset) do not apply.
 :::
