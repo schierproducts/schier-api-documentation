@@ -399,6 +399,54 @@ GET /products/:model-number
       }
     ]
   },
+  "compatible_products": {
+    "object": "list",
+    "data": [
+      {
+        "id": 56,
+        "name": "GB1",
+        "short_name": "GB1",
+        "type": "Hydromechanical Grease Interceptor",
+        "part_number": "4060-001-04",
+        "short_description": "20\/25 GPM Great Basin™ Indoor High Capacity Grease Interceptor",
+        "market_specific_description": "20\/25 GPM, 10-gallon indoor grease interceptor",
+        "store_id": "134",
+        "link": "https:\/\/schierproducts.com\/gb1\/",
+        "price": {
+          "list": "778.00",
+          "retail": {
+            "multiplier": 0.7,
+            "price": "544.60",
+            "object": "price"
+          },
+          "wholesale": {
+            "multiplier": 0.55,
+            "price": "427.90",
+            "object": "price"
+          },
+          "object": "product-price"
+        },
+        "images": {
+          "object": "product-image-library",
+          "primary": {
+            "orig": "https:\/\/schier-resources.s3.us-east-2.amazonaws.com\/product-photos\/gb1\/gb1_1.jpg",
+            "lg": "https:\/\/schier-resources.s3.us-east-2.amazonaws.com\/product-photos\/gb1\/gb1_1_lg.jpg",
+            "md": "https:\/\/schier-resources.s3.us-east-2.amazonaws.com\/product-photos\/gb1\/gb1_1_md.jpg",
+            "sm": "https:\/\/schier-resources.s3.us-east-2.amazonaws.com\/product-photos\/gb1\/gb1_1_sm.jpg",
+            "object": "image-library"
+          },
+          "dimension": {
+            "orig": "https:\/\/schier-resources.s3.us-east-2.amazonaws.com\/product-photos\/gb1\/gb1_2.jpg",
+            "lg": "https:\/\/schier-resources.s3.us-east-2.amazonaws.com\/product-photos\/gb1\/gb1_2_lg.jpg",
+            "md": "https:\/\/schier-resources.s3.us-east-2.amazonaws.com\/product-photos\/gb1\/gb1_2_md.jpg",
+            "sm": "https:\/\/schier-resources.s3.us-east-2.amazonaws.com\/product-photos\/gb1\/gb1_2_sm.jpg",
+            "object": "image-library"
+          }
+        },
+        "object": "simple-product"
+      }
+    ]
+  },
   "options": {
     "object": "list",
     "data": [
@@ -619,6 +667,10 @@ List of products that have a relationship to the product initially queried; for 
 
 ::: details accessories <span class="code-note">optional, array</span>
 List of products that can be attached to the queried product to customize it or modify it's operation.
+:::
+
+::: details compatible_products <span class="code-note">optional, array</span>
+List of compatible products that this product can be accessorized by. In other words, a list of products that indicate this product as a compatible accessory. 
 :::
 
 ::: details options <span class="code-note">optional, object</span>
