@@ -1,6 +1,6 @@
 version: "1"
 pipelines:
-  - name: product-api-documentation-deployment:0.1.0
+  - name: product-api-documentation-deployment:1.0.0
     description: Compiles and deploys the documentation of the Schier Product API to
       Firebase.
     env:
@@ -40,7 +40,7 @@ pipelines:
           - firebase use schier-api-documentation --token $FIREBASE_TOKEN
           - firebase deploy --non-interactive --token $FIREBASE_TOKEN
 services:
-  - name: preview-documentation:0.1.0
+  - name: product-api-documentation-preview:1.0.0
     description: Preview the Schier Products Product API documentation.
     run: npm run dev
     port: [ '8080:8080' ]
