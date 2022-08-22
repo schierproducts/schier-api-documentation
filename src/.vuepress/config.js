@@ -152,6 +152,15 @@ module.exports = {
               '/grease-monkey/projects/get-project-by-id',
             ],
           },
+          {
+            title: 'Kitchen Fixtures',
+            path: '/grease-monkey/kitchen-fixtures/',
+            collapsable: true,
+            children: [
+              '/grease-monkey/kitchen-fixtures/get-kitchen-fixtures-from-project-by-id',
+              '/grease-monkey/kitchen-fixtures/get-kitchen-fixture-by-id',
+            ],
+          },
           '/grease-monkey/jurisdictions',
           '/grease-monkey/search',
           {
@@ -159,7 +168,6 @@ module.exports = {
             path: '/grease-monkey/other-resources/',
             // collapsable: false,
             children: [
-              '/grease-monkey/other-resources/kitchen-fixtures',
               '/grease-monkey/other-resources/jurisdiction-contacts',
               '/grease-monkey/other-resources/notes',
               '/grease-monkey/other-resources/product-accessories',
