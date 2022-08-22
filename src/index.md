@@ -4,7 +4,6 @@ title: Digital Products Documentation
 heroImage: /assets/img/schier-logo-horizontal.svg
 tagline: Documentation repository for Schier Products' various digital IP and API documentation.
 actionText: Get Started
-actionLink: /basics/
 features:
 - title: Grease Monkey API
   details: Retrieve users, jurisdictions, and their associated projects from the Grease Monkey ecosystem.

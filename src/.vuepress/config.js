@@ -33,6 +33,7 @@ module.exports = {
     [
       'script', {}, `window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-7WJY8LHWQZ');`
     ],
+    ["script", { src : "https://cdn.auth0.com/js/auth0-spa-js/1.20/auth0-spa-js.production.js" } ],
   ],
 
   /**
@@ -143,7 +144,13 @@ module.exports = {
             path: '/grease-monkey/',
           },
           '/grease-monkey/users',
-          '/grease-monkey/projects',
+          {
+            title: 'Projects',
+            path: '/grease-monkey/projects/',
+            children: [
+
+            ]
+          },
           '/grease-monkey/jurisdictions',
           '/grease-monkey/search',
           {
@@ -203,5 +210,8 @@ module.exports = {
         return moment(timestamp).fromNow()
       }
     }
-  }
+  },
+  globalUIComponents: [
+    'Redirect',
+  ]
 }

@@ -2,6 +2,7 @@
 title: Projects
 description: References a project within Grease Monkey.
 sidebarDepth: 3
+auth: true
 ---
 
 # Projects
