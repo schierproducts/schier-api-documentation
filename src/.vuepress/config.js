@@ -143,7 +143,15 @@ module.exports = {
             path: '/grease-monkey/',
           },
           '/grease-monkey/users',
-          '/grease-monkey/projects',
+          {
+            title: 'Projects',
+            path: '/grease-monkey/projects/',
+            collapsable: true,
+            children: [
+              '/grease-monkey/projects/get-projects',
+              '/grease-monkey/projects/get-project-by-id',
+            ],
+          },
           '/grease-monkey/jurisdictions',
           '/grease-monkey/search',
           {
