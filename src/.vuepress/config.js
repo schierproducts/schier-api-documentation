@@ -161,6 +161,15 @@ module.exports = {
               '/grease-monkey/kitchen-fixtures/get-kitchen-fixture-by-id',
             ],
           },
+          {
+            title: 'Spaces',
+            path: '/grease-monkey/spaces/',
+            collapsable: true,
+            children: [
+              '/grease-monkey/spaces/get-spaces-from-project-by-id',
+              '/grease-monkey/spaces/get-space-by-id',
+            ],
+          },
           '/grease-monkey/jurisdictions',
           '/grease-monkey/search',
           {
