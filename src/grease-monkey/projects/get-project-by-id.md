@@ -48,18 +48,40 @@ If you would like to include the list of recommended, compatible accessories for
 This defaults to false because of the large amount of information that can be included with this response.
 :::
 
-#### fixtures
-
-<span class="code-note block">optional, boolean</span>
+#### Kitchen Fixtures
 
 If you would like to include the list of kitchen fixtures and their detailed information.
-
-Also [see Kitchen Fixtures](/grease-monkey/other-resources/kitchen-fixtures.html).
 
 ``` http
 /api/projects/1320?fixtures=true
 ```
 
+[Also see GET Kitchen Fixtures from Project](/grease-monkey/kitchen-fixtures/get-kitchen-fixtures-from-project-by-id).
+
 ::: warning Notice
 Due to the highly-verbose nature of this information, requesting this information is cautioned; especially with high-latency network connections.
 :::
+
+## Responses
+
+### 200 <Badge text="success" type="success" />
+
+If successful, the API will respond with an instance of the Project Object.
+
+[View Project Object](/grease-monkey/projects/#the-project-object)
+
+### 404 <Badge text="error" type="error" />
+
+```json
+{
+  "object": "error-list",
+  "errors": [
+    {
+      "type": "error",
+      "title": "Not Found",
+      "status": 404,
+      "detail": "The requested project identified by 1234 could not be found."
+    }
+  ]
+}
+```

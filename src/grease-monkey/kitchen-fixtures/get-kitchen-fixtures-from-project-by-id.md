@@ -14,7 +14,11 @@ Return a list of kitchen fixtures that are associated with a Grease Monkey proje
 GET /api/projects/:id/kitchen-fixtures
 ```
 
-## Sample Response
+## Responses
+
+### 200 <Badge text="success" type="success" />
+
+If successful, the API will return a list of kitchen fixtures that are associated with a project
 
 ```json
 {
@@ -208,5 +212,21 @@ GET /api/projects/:id/kitchen-fixtures
             }
         }
     ]
+}
+```
+
+### 404 <Badge text="error" type="error" />
+
+```json
+{
+  "object": "error-list",
+  "errors": [
+    {
+      "type": "error",
+      "title": "Not Found",
+      "status": 404,
+      "detail": "The requested project identified by 1234 could not be found."
+    }
+  ]
 }
 ```

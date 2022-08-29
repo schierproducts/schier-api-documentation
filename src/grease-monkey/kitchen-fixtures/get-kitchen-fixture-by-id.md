@@ -1,5 +1,5 @@
 ---
-title: GET a Kitchen Fixture (by Id)
+title: GET Kitchen Fixture (by Id)
 description: Return a single kitchen fixture associated with a Grease Monkey project.
 sidebarDepth: 0
 ---
@@ -84,5 +84,27 @@ GET /api/kitchen-fixtures/:id
             }
         }
     }
+}
+```
+
+## Responses
+
+### 200 <Badge text="success" type="success" />
+
+If successful, the API will return an instance of [a kitchen fixture](/grease-monkey/kitchen-fixtures/#the-kitchen-fixture-object).
+
+### 404 <Badge text="error" type="error" />
+
+```json
+{
+  "object": "error-list",
+  "errors": [
+    {
+      "type": "error",
+      "title": "Not Found",
+      "status": 404,
+      "detail": "The requested kitchen fixture identified by 1234 could not be found."
+    }
+  ]
 }
 ```

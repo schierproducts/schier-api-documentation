@@ -17,12 +17,13 @@ If you receive a `5XX` status code, please contact Schier and notify us of the p
 
 ## Response Code Explanation
 
-| Code           | Summary                      |
-| -------------- | ---------------------------- |
-| 200            | **OK** &mdash; The request was successful and everything is ok |
-| 400, 422            | **Bad Request** &mdash; The request was invalid due to incorrect/missing parameters |
-| 401            | **Unauthorized** &mdash; No valid API key was provided |
-| 403            | **Forbidden** &mdash; The provided API does not have the necessary permissions to successfully perform the request |
-| 404            | **Not Found** &mdash; The requested endpoint/resource does not exist |
-| 429            | **Too Many Requests** &mdash; You have made too many requests, and the API has put a rate limiter in place to prevent potential abuse |
-| 500, 502, 503, 504 | **Server Errors** &mdash; The API server is currently experiencing issues. The request was rejected. |
+| Code               | Summary                                                                                                                               |
+|--------------------|---------------------------------------------------------------------------------------------------------------------------------------|
+| 200                | **OK** &mdash; The request was successful and everything is ok                                                                        |
+| 400, 422           | **Bad Request** &mdash; The request was invalid due to incorrect/missing parameters                                                   |
+| 401                | **Unauthorized** &mdash; No valid API key was provided                                                                                |
+| 403                | **Forbidden** &mdash; The provided API does not have the necessary permissions to successfully perform the request                    |
+| 404                | **Not Found** &mdash; The requested endpoint/resource does not exist                                                                  |
+| 422                | **Validation Error** &mdash; The information submitted in the response is not valid and no action could be taken                      |
+| 429                | **Too Many Requests** &mdash; You have made too many requests, and the API has put a rate limiter in place to prevent potential abuse |
+| 500, 502, 503, 504 | **Server Errors** &mdash; The API server is currently experiencing issues. The request was rejected.                                  |

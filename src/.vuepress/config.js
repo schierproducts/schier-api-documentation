@@ -48,7 +48,8 @@ module.exports = {
     logo: '/assets/img/schier-logo-pioneer.svg',
     algolia: {
       apiKey: 'bea1ae4fd8e0fcccb234cbf98969b6bc',
-      indexName: 'schierproducts'
+      indexName: 'schierproducts',
+      appId: 'BH4D9OD16A',
     },
     nav: [
       {
@@ -150,6 +151,7 @@ module.exports = {
             children: [
               '/grease-monkey/projects/get-projects',
               '/grease-monkey/projects/get-project-by-id',
+              '/grease-monkey/projects/delete-project',
             ],
           },
           {
@@ -159,6 +161,7 @@ module.exports = {
             children: [
               '/grease-monkey/kitchen-fixtures/get-kitchen-fixtures-from-project-by-id',
               '/grease-monkey/kitchen-fixtures/get-kitchen-fixture-by-id',
+              '/grease-monkey/kitchen-fixtures/delete-kitchen-fixture',
             ],
           },
           {
@@ -168,6 +171,7 @@ module.exports = {
             children: [
               '/grease-monkey/spaces/get-spaces-from-project-by-id',
               '/grease-monkey/spaces/get-space-by-id',
+              '/grease-monkey/spaces/delete-space',
             ],
           },
           '/grease-monkey/jurisdictions',
