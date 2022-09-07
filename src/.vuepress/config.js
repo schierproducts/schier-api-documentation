@@ -152,6 +152,9 @@ module.exports = {
             children: [
               '/grease-monkey/projects/get-projects',
               '/grease-monkey/projects/get-project-by-id',
+              '/grease-monkey/projects/get-installation-locations',
+              '/grease-monkey/projects/get-construction-types',
+              '/grease-monkey/projects/create-project',
               '/grease-monkey/projects/delete-project',
             ],
           },
