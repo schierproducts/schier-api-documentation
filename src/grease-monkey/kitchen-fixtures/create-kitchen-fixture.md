@@ -38,25 +38,25 @@ Some kitchen fixtures are measured by the liquid volume versus their cubic area.
 
 ### Body
 
-`name` | `string` : The name of the fixture.
+**name** | `string` : The name of the fixture.
 
-`type` | `string` : The key/name of the type of fixture that is being defined. [See "GET Kitchen Fixture Types".](/grease-monkey/kitchen-fixtures/get-kitchen-fixture-types)
+**type** | `string` : The key/name of the type of fixture that is being defined. [See "GET Kitchen Fixture Types".](/grease-monkey/kitchen-fixtures/get-kitchen-fixture-types)
 
-`amount` | `integer` : The number of the defined fixtures will be added to the project.
+**amount** | `integer` : The number of the defined fixtures will be added to the project.
 
-`typical_dimensions` | `boolean` : Each fixture has a standard/universal set of dimensions. Set to **true** if you would like to use these dimensions.
+**typical_dimensions** | `boolean` : Each fixture has a standard/universal set of dimensions. Set to **true** if you would like to use these dimensions.
 
-`dimensions` | `object` : A list of dimensions used to define the size of the fixture.
+**dimensions** | `object` : A list of dimensions used to define the size of the fixture.
 
----- `lng` | `integer`,`null` : The length of the fixture bowl/reservoir *(required if typical_dimensions is **false**)*
+---- **lng** | `integer`,`null` : The length of the fixture bowl/reservoir *(required if typical_dimensions is **false**)*
 
----- `width` | `integer`,`null` : The length of the fixture bowl/reservoir *(required if typical_dimensions is **false**)*
+---- **width** | `integer`,`null` : The length of the fixture bowl/reservoir *(required if typical_dimensions is **false**)*
 
----- `height` | `integer`,`null` : The height of the fixture bowl/reservoir *(required if typical_dimensions is **false**)*
+---- **height** | `integer`,`null` : The height of the fixture bowl/reservoir *(required if typical_dimensions is **false**)*
 
----- `volume` | `integer`,`null` : The height of the fixture bowl/reservoir *(required if typical_dimensions is **false**)*
+---- **volume** | `integer`,`null` : The height of the fixture bowl/reservoir *(required if typical_dimensions is **false**)*
 
-`custom_flow_rate` | `integer`,`null` : Some fixtures allow for the designation of a custom flow rate. If a custom flow rate is supplied to a kitchen fixture that does not support this information, it will simply be ignored.
+**custom_flow_rate** | `integer`,`null` : Some fixtures allow for the designation of a custom flow rate. If a custom flow rate is supplied to a kitchen fixture that does not support this information, it will simply be ignored.
 
 ### Sample Request
 

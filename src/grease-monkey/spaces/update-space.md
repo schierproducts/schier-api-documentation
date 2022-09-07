@@ -31,9 +31,9 @@ PUT /api/spaces/:id
 
 ### Body
 
-`name` | `string` : The name of the shell space.
+**name** | `string` : The name of the shell space.
 
-`amount` | `integer` : The amount of square footage that the newly created space will occupy. **Must be a whole number**.
+**amount** | `integer` : The amount of square footage that the newly created space will occupy. **Must be a whole number**.
 
 ### Sample Request
 
