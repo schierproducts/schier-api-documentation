@@ -14,6 +14,18 @@ Delete a space from a desired project.
 DELETE /api/spaces/:id
 ```
 
+## Request
+
+### Headers
+
+| Header          | Parameter           | Description                       |
+|-----------------|---------------------|-----------------------------------|
+| `Authorization` | `Bearer: <API_KEY>` | The key used to access the API.   |
+
+### Body
+
+No body and/or JSON payload is required.
+
 ## Responses
 
 ### 204 <Badge text="success" type="success" />

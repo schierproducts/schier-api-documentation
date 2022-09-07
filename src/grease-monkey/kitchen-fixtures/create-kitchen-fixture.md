@@ -38,7 +38,7 @@ Some kitchen fixtures are measured by the liquid volume versus their cubic area.
 
 ### Body
 
-`name` | `string` : The name of the fixture
+`name` | `string` : The name of the fixture.
 
 `type` | `string` : The key/name of the type of fixture that is being defined. [See "GET Kitchen Fixture Types".](/grease-monkey/kitchen-fixtures/get-kitchen-fixture-types)
 
@@ -88,6 +88,8 @@ Upon a successful creation/addition of a kitchen fixture, a new instance of the 
 
 ```json
 {
+  "object": "kitchen-fixture",
+  "url": "/api/kitchen-fixtures/1366",
   "id": 1366,
   "name": "Chicken Station",
   "type": "Dump Sink",
@@ -187,7 +189,7 @@ Upon a successful creation/addition of a kitchen fixture, a new instance of the 
 
 ### 201 <Badge text="created" type="success" />
 
-A new instance of the Ktichen Fixture Object has been created.
+A new instance of the Kitchen Fixture Object has been created.
 
 ### 403 <Badge text="error" type="error" />
 

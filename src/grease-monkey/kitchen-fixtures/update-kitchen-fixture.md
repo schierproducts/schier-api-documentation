@@ -88,6 +88,8 @@ Upon a successful update of a kitchen fixture, a new instance of the [Kitchen Fi
 
 ```json
 {
+  "object": "kitchen-fixture",
+  "url": "/api/kitchen-fixtures/1366",
   "id": 1366,
   "name": "Chicken Station",
   "type": "Dump Sink",

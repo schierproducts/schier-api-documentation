@@ -175,6 +175,8 @@ module.exports = {
             children: [
               '/grease-monkey/spaces/get-spaces-from-project-by-id',
               '/grease-monkey/spaces/get-space-by-id',
+              '/grease-monkey/spaces/create-space',
+              '/grease-monkey/spaces/update-space',
               '/grease-monkey/spaces/delete-space',
             ],
           },

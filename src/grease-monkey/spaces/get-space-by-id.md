@@ -34,3 +34,27 @@ If the parent project does not have the `construction_type` value of `Shell Spac
     }
 }
 ```
+
+## Responses
+
+### 200 <Badge text="created" type="success" />
+
+A shell space has been found and retrieved successfully.
+
+### 404 <Badge text="error" type="error" />
+
+The shell space that was requested does not exist.
+
+```json
+{
+  "object": "error-list",
+  "errors": [
+    {
+      "type": "error",
+      "title": "Not Found",
+      "status": 404,
+      "detail": "The requested shell space identified by 1234 could not be found."
+    }
+  ]
+}
+```
