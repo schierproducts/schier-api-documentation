@@ -138,6 +138,7 @@ module.exports = {
       {
         title: 'Grease Monkey',
         path: '/grease-monkey/',
+        collapsable: true,
         children: [
           {
             title: 'About Grease Monkey API',
@@ -160,7 +161,10 @@ module.exports = {
             collapsable: true,
             children: [
               '/grease-monkey/kitchen-fixtures/get-kitchen-fixtures-from-project-by-id',
+              '/grease-monkey/kitchen-fixtures/get-kitchen-fixture-types',
               '/grease-monkey/kitchen-fixtures/get-kitchen-fixture-by-id',
+              '/grease-monkey/kitchen-fixtures/create-kitchen-fixture',
+              '/grease-monkey/kitchen-fixtures/update-kitchen-fixture',
               '/grease-monkey/kitchen-fixtures/delete-kitchen-fixture',
             ],
           },
@@ -216,10 +220,6 @@ module.exports = {
       },
     ],
   },
-
-  /**
-   * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
-   */
   plugins: {
     '@vuepress/plugin-back-to-top': {},
     '@vuepress/medium-zoom': {
@@ -231,6 +231,7 @@ module.exports = {
         moment.locale(lang)
         return moment(timestamp).fromNow()
       }
-    }
+    },
+    'tabs': {},
   }
 }

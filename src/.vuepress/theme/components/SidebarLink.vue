@@ -164,7 +164,8 @@ a.sidebar-link
             background #008752
         &.post-badge
             background #309FD6
-        &.update-badge
+        &.update-badge,
+        &.put-badge
             background rgb(245 158 11)
         &.delete-badge
             background #b74a2b
