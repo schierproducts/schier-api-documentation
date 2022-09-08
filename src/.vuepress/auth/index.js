@@ -15,6 +15,9 @@ export default {
         } catch (e) {
             // eslint-disable-next-line
             console.error(e);
+            alert(e);
+            // auto logout
+            this.logout(client);
         }
     },
 
