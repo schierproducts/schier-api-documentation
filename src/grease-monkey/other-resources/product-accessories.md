@@ -1,6 +1,7 @@
 ---
 description: Expected response information from notes that have been attached to either a jurisdiction or project
 next: false
+auth: true
 ---
 
 # Product Accessories

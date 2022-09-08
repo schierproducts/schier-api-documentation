@@ -68,6 +68,8 @@
 
 <script>
 import NavLink from '@theme/components/NavLink.vue'
+import Authentication from "../../mixins/Authentication";
+import LoginButton from "../../components/LoginButton";
 
 export default {
     name: 'Home',

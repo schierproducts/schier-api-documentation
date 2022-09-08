@@ -1,5 +1,6 @@
 ---
 next: /grease-monkey/other-resources/
+auth: true
 ---
 
 # Jurisdictions

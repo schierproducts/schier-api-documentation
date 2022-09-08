@@ -1,5 +1,6 @@
 ---
 description: Expected response information from the Jurisdiction Contact data type
+auth: true
 ---
 
 # Jurisdiction Contacts

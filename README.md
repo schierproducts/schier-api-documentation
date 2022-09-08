@@ -1,5 +1,3 @@
-[![buddy pipeline](https://app.buddy.works/schierproducts/schier-api-documentation/pipelines/pipeline/320460/badge.svg?token=d8b7cd656f6e7fbdf1dd448778018de722743797c0c4eaf4d78c7696514ffe15 "buddy pipeline")](https://app.buddy.works/schierproducts/schier-api-documentation/pipelines/pipeline/320460)
-
 # Schier API Documentation
 
 This website uses [VuePress](https://vuepress.vuejs.org/) to compile and render the documentation for all of Schier's various digital IP and API's.
