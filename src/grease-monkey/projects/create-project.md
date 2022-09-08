@@ -135,6 +135,7 @@ Upon a successful creation of a project, a new instance of the [Project Object](
   "created": "09/07/2022",
   "submitted": null,
   "approved": null,
+  "due": null,
   "engineer": {
     "id": 6578,
     "name": "Starrlene Parish",

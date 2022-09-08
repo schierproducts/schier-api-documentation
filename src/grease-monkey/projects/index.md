@@ -21,10 +21,13 @@ When retrieve a list of objects, the amount of meta that is returned via the API
   "id": 1645,
   "name": "Soluna *****",
   "status": "Draft",
+  "status_value": "draft",
   "created": "06/11/2018",
   "submitted": "06/11/2018",
   "approved": null,
+  "due": null,
   "engineer": {
+    "id": 6578,
     "name": "Lance *****",
     "email": "*****@gmail.com",
     "phone_number": null
@@ -37,9 +40,12 @@ When retrieve a list of objects, the amount of meta that is returned via the API
     "postal_code": "43215"
   },
   "jurisdiction": null,
+  "unique_local_requirements": false,
   "pump_out_cycle": 90,
   "construction_type": "Remodel / Tenant Finish",
+  "construction_type_value": "tenantFinish",
   "installation_location": "Indoors",
+  "installation_location_value": "indoors",
   "inside_trap_location": "kitchen",
   "installed_in_traffic_area": false,
   "installed_in_high_water_area": false,
@@ -78,6 +84,11 @@ When retrieve a list of objects, the amount of meta that is returned via the API
     "dfu": 40
   },
   "grease": {
+    "capacity_method": {
+      "name": "Number of Seats",
+      "key": "numberOfSeats",
+      "value": 120
+    },
     "per_serving": {
       "weight": {
         "value": 0.05,
@@ -146,7 +157,7 @@ When retrieve a list of objects, the amount of meta that is returned via the API
   },
   "fixtures": {
     "object": "list",
-    "url": "/api/projects/1645",
+    "url": "/api/projects/1645/kitchen-fixtures",
     "data": [
       {
         "name": "3 comp sink",
@@ -243,7 +254,8 @@ When retrieve a list of objects, the amount of meta that is returned via the API
       }
     ]
   },
-  "unique_local_requirements": false
+  "valid": true,
+  "invalid_values": []
 }
 ```
 
