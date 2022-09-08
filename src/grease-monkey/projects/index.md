@@ -10,13 +10,6 @@ This object references a project *(or sizing)* within Grease Monkey. You can ret
 
 You can also view more detailed information about an individual project and all the attributing factors (kitchen fixtures, spaces, etc).
 
-## Base Endpoints
-
-``` http
-GET /api/projects
-GET /api/projects/:id
-```
-
 ## The Project Object
 
 When retrieve a list of objects, the amount of meta that is returned via the API is limited to help reduce latency and potential memory issues that may happen when consuming large objects.
@@ -458,9 +451,9 @@ These values are provided in both pounds and gallons.
 ::: details fixtures <span class="code-note">object</span>
 A list of kitchen fixtures used to size this project.
 
-[See Kitchen Fixtures](/grease-monkey/other-resources/kitchen-fixtures.html)
+[See Kitchen Fixtures](/grease-monkey/kitchen-fixtures)
 :::
 
 ::: details unique_local_requirements <span class="code-note">boolean</span>
-If the jurisdiction in which the project resides has unique requirements; prevening Grease Monkey from accurately recommending a product.
+If the jurisdiction in which the project resides has unique requirements; preventing Grease Monkey from accurately recommending a product.
 :::

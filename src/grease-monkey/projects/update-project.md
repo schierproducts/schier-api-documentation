@@ -1,17 +1,17 @@
 ---
-title: POST Create Project
-description: Create a new Grease Monkey project.
+title: PUT Update Project
+description: Update an existing Grease Monkey project.
 sidebarDepth: 0
 ---
 
-# POST Create a Project
+# PUT Update Project
 
-Create a new Grease Monkey project.
+Update an existing Grease Monkey project.
 
 ## Endpoint
 
 ``` http
-POST /api/projects
+PUT /api/projects/6578
 ```
 
 ## Request
@@ -21,18 +21,6 @@ POST /api/projects
 | Header          | Parameter           | Description                       |
 |-----------------|---------------------|-----------------------------------|
 | `Authorization` | `Bearer: <API_KEY>` | The key used to access the API.   |
-
-
-### Required Fields
-
-| Field                   | Type           |
-|-------------------------|----------------|
-| `name`                  | string         |
-| `engineer_id`           | integer        |
-| `specification`         | boolean        |
-| `address`               | object         |
-| `construction_type`     | string (enum)  |
-| `installation_location` | string (enum)  |
 
 ### Body
 
@@ -60,21 +48,21 @@ POST /api/projects
 
 **installation_location** | `string` : Where will the interceptor be installed; accepted values are `indoors` and `outdoors`
 
-**buried** | `boolean`,`null` : If the installed interceptor will be buried; **defaults to `false`**
+**buried** | `boolean` : If the installed interceptor will be buried.
 
-**installed_in_traffic_area** | `boolean`,`null` : If buried, will the specified interceptor be placed in a high-traffic area; **defaults to `false`**
+**installed_in_traffic_area** | `boolean` : If buried, will the specified interceptor be placed in a high-traffic area.
 
-**installed_in_high_water_area** | `boolean`,`null` : If buried, will the specified interceptor be placed in an area with a high water table; **defaults to `false`**
+**installed_in_high_water_area** | `boolean` : If buried, will the specified interceptor be placed in an area with a high water table.
 
-**fryer** | `boolean`,`null` : If the sized-location will have a deep-fryer; **defaults to `false`**
+**fryer** | `boolean` : If the sized-location will have a deep-fryer.
 
-**flatware** | `boolean`,`null` : If the sized-location will be using traditional silver that will need to be washed versus discarded; **defaults to `false`**
+**flatware** | `boolean` : If the sized-location will be using traditional silver that will need to be washed versus discarded.
 
-**food_waste_disposer** | `boolean`,`null` : If the sized-location will have a garbage disposal installed on premises; **defaults to `false`**
+**food_waste_disposer** | `boolean` : If the sized-location will have a garbage disposal installed on premises.
 
-**pipe_size** | `integer`,`null` : The size of the pipe that will be connecting to the interceptor. Accepted values are `2`, `3`, `4`, and `6`; **defaults to `4`**
+**pipe_size** | `integer` : The size of the pipe that will be connecting to the interceptor. Accepted values are `2`, `3`, `4`, and `6`.
 
-**dont_know_fixtures** | `boolean`,`null` : If the engineer does not know which fixtures will be used, set to `true` to size by pipe size; **defaults to `false`**
+**dont_know_fixtures** | `boolean` : If the engineer does not know which fixtures will be used, set to `true` to size by pipe size.
 
 **capacity_method** | `string` : The mathematical method on how grease capacity will be calculated; accepted values are `numberOfMeals`, `numberOfSeats` and `numberOfSquareFootage`. The value provided here will dictate which accompanying values will be necessary to complete the calculation.
 
@@ -88,12 +76,26 @@ POST /api/projects
 
 **due_at** | `string`,`null` : If desired, the date that this project needs to be reviewed and checked out by the Regulatory Compliance Specialists. **Required format: MM/DD/YYYY**
 
+#### Local Requirements inputs
+
+If the project that you are trying to update resides within a jurisdiction that requires special pieces of information that "normal" projects don't require, you will be notified of the necessary inputs to make the project valid in the [project response](/grease-monkey/projects/create-project#sample-response) when the project is created via the `invalid_values` property. See below for information regarding these special properties.
+
+**number_of_indoor_seats** | `integer`,`null` : The number of seats for the FSE that are located indoors.
+
+**number_of_outdoor_seats** | `integer`,`null` : The number of seats for the FSE that are located outdoors.
+
+**number_of_bar_seats** | `integer`,`null` : The number of seats for the FSE that are located within a designated bar area.
+
+**number_of_take_out_meals** | `integer`,`null` : On average, the number of take out meals that will be served/delivered per day.
+
+**food_service_at_bar** | `boolean` : If the FSE does have a designated bar area, will food be served in the bar area.
+
 ### Sample Request
 
 #### URL
 
 ```bash
-https://app.greasemonkeysizing.com/api/projects
+https://app.greasemonkeysizing.com/api/projects/6578
 ```
 
 #### Body
@@ -121,7 +123,7 @@ https://app.greasemonkeysizing.com/api/projects
 
 ### Sample Response
 
-Upon a successful creation of a project, a new instance of the [Project Object](/grease-monkey/projects#the-project-object) will be returned with an **HTTP status code of 201**.
+Upon a successful creation of a project, a new instance of the [Project Object](/grease-monkey/projects#the-project-object) will be returned with an **HTTP status code of 200**.
 
 ```json
 {
@@ -214,9 +216,9 @@ Upon a successful creation of a project, a new instance of the [Project Object](
 
 ## Responses
 
-### 201 <Badge text="created" type="success" />
+### 200 <Badge text="created" type="success" />
 
-A new instance of the Project Object has been created.
+The project has been successfully updated with the provided information.
 
 ### 400 <Badge text="error" type="error" />
 
@@ -238,7 +240,7 @@ The request is not valid.
 
 ### 403 <Badge text="error" type="error" />
 
-The API token is not authorized to perform this action.
+The request has not permitted based on logic or user access.
 
 ```json
 {
@@ -246,9 +248,9 @@ The API token is not authorized to perform this action.
   "errors": [
     {
       "type": "error",
-      "title": "Unauthorized",
+      "title": "Not Authorized",
       "status": 403,
-      "detail": "The API token that you are using is not allowed to do this."
+      "detail": "The project cannot be updated because it is in a closed state."
     }
   ]
 }

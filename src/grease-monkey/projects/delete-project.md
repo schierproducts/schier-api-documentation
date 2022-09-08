@@ -4,7 +4,7 @@ description: Delete a project and all associated kitchen fixtures, spaces, etc.
 sidebarDepth: 0
 ---
 
-# DELETE Kitchen Fixture
+# DELETE Project
 
 Delete a project and all associated kitchen fixtures, spaces, etc.
 
