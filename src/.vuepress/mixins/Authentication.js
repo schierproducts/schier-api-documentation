@@ -8,7 +8,7 @@ export default {
             user : null
         }
     },
-    async beforeMount() {
+    async mounted(){
         const { frontmatter } = this.$page;
         const { auth } = frontmatter;
 
@@ -16,25 +16,6 @@ export default {
             this.auth0client = await AuthConfig.createClient();
             this.user = await this.auth0client.getUser();
         }
-    },
-    // async mounted() {
-    //     const { frontmatter } = this.$page;
-    //     const { auth } = frontmatter;
-    //
-    //     if (auth !== undefined && auth === true) {
-    //         this.auth0client = await AuthConfig.createClient();
-    //         this.user = await this.auth0client.getUser();
-    //     }
-    //     if (!this.user) {
-    //         await AuthConfig.loginWithPopup(this.auth0client);
-    //     }
-    //     console.log(this.user);
-    // }
-
-    async mounted(){
-        this.auth0client = await auth.createClient();
-
-        this.user = await this.auth0client.getUser();
     },
     methods : {
         async login () {

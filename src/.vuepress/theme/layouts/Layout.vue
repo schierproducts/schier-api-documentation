@@ -63,6 +63,7 @@ import Page from '@theme/components/Page.vue'
 import PageAuth from '@theme/components/PageAuth.vue'
 import Sidebar from '@theme/components/Sidebar.vue'
 import { resolveSidebarItems } from '@theme/util'
+import Authentication from "../../mixins/Authentication";
 
 export default {
     extends: Layout,
@@ -75,6 +76,7 @@ export default {
         Navbar,
         PageAuth,
     },
+    mixins: [ Authentication ],
 
     data () {
         return {
