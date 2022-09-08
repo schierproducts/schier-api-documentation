@@ -49,7 +49,8 @@ module.exports = {
     logo: '/assets/img/schier-logo-pioneer.svg',
     algolia: {
       apiKey: 'bea1ae4fd8e0fcccb234cbf98969b6bc',
-      indexName: 'schierproducts'
+      indexName: 'schierproducts',
+      appId: 'BH4D9OD16A',
     },
     nav: [
       {
@@ -138,6 +139,7 @@ module.exports = {
       {
         title: 'Grease Monkey',
         path: '/grease-monkey/',
+        collapsable: true,
         children: [
           {
             title: 'About Grease Monkey API',
@@ -147,9 +149,42 @@ module.exports = {
           {
             title: 'Projects',
             path: '/grease-monkey/projects/',
+            collapsable: true,
             children: [
-
-            ]
+              '/grease-monkey/projects/get-projects',
+              '/grease-monkey/projects/get-project-by-id',
+              '/grease-monkey/projects/get-installation-locations',
+              '/grease-monkey/projects/get-construction-types',
+              '/grease-monkey/projects/create-project',
+              '/grease-monkey/projects/update-project',
+              '/grease-monkey/projects/delete-project',
+              '/grease-monkey/projects/submit-projects-for-review',
+            ],
+          },
+          {
+            title: 'Kitchen Fixtures',
+            path: '/grease-monkey/kitchen-fixtures/',
+            collapsable: true,
+            children: [
+              '/grease-monkey/kitchen-fixtures/get-kitchen-fixtures-from-project-by-id',
+              '/grease-monkey/kitchen-fixtures/get-kitchen-fixture-types',
+              '/grease-monkey/kitchen-fixtures/get-kitchen-fixture-by-id',
+              '/grease-monkey/kitchen-fixtures/create-kitchen-fixture',
+              '/grease-monkey/kitchen-fixtures/update-kitchen-fixture',
+              '/grease-monkey/kitchen-fixtures/delete-kitchen-fixture',
+            ],
+          },
+          {
+            title: 'Spaces',
+            path: '/grease-monkey/spaces/',
+            collapsable: true,
+            children: [
+              '/grease-monkey/spaces/get-spaces-from-project-by-id',
+              '/grease-monkey/spaces/get-space-by-id',
+              '/grease-monkey/spaces/create-space',
+              '/grease-monkey/spaces/update-space',
+              '/grease-monkey/spaces/delete-space',
+            ],
           },
           '/grease-monkey/jurisdictions',
           '/grease-monkey/search',
@@ -158,7 +193,6 @@ module.exports = {
             path: '/grease-monkey/other-resources/',
             // collapsable: false,
             children: [
-              '/grease-monkey/other-resources/kitchen-fixtures',
               '/grease-monkey/other-resources/jurisdiction-contacts',
               '/grease-monkey/other-resources/notes',
               '/grease-monkey/other-resources/product-accessories',
@@ -194,10 +228,6 @@ module.exports = {
       },
     ],
   },
-
-  /**
-   * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
-   */
   plugins: {
     '@vuepress/plugin-back-to-top': {},
     '@vuepress/medium-zoom': {

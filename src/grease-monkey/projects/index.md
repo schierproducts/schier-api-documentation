@@ -11,13 +11,6 @@ This object references a project *(or sizing)* within Grease Monkey. You can ret
 
 You can also view more detailed information about an individual project and all the attributing factors (kitchen fixtures, spaces, etc).
 
-## Base Endpoints
-
-``` http
-GET /api/projects
-GET /api/projects/:id
-```
-
 ## The Project Object
 
 When retrieve a list of objects, the amount of meta that is returned via the API is limited to help reduce latency and potential memory issues that may happen when consuming large objects.
@@ -29,10 +22,13 @@ When retrieve a list of objects, the amount of meta that is returned via the API
   "id": 1645,
   "name": "Soluna *****",
   "status": "Draft",
+  "status_value": "draft",
   "created": "06/11/2018",
   "submitted": "06/11/2018",
   "approved": null,
+  "due": null,
   "engineer": {
+    "id": 6578,
     "name": "Lance *****",
     "email": "*****@gmail.com",
     "phone_number": null
@@ -45,9 +41,12 @@ When retrieve a list of objects, the amount of meta that is returned via the API
     "postal_code": "43215"
   },
   "jurisdiction": null,
+  "unique_local_requirements": false,
   "pump_out_cycle": 90,
   "construction_type": "Remodel / Tenant Finish",
+  "construction_type_value": "tenantFinish",
   "installation_location": "Indoors",
+  "installation_location_value": "indoors",
   "inside_trap_location": "kitchen",
   "installed_in_traffic_area": false,
   "installed_in_high_water_area": false,
@@ -86,6 +85,11 @@ When retrieve a list of objects, the amount of meta that is returned via the API
     "dfu": 40
   },
   "grease": {
+    "capacity_method": {
+      "name": "Number of Seats",
+      "key": "numberOfSeats",
+      "value": 120
+    },
     "per_serving": {
       "weight": {
         "value": 0.05,
@@ -154,7 +158,7 @@ When retrieve a list of objects, the amount of meta that is returned via the API
   },
   "fixtures": {
     "object": "list",
-    "url": "/api/projects/1645",
+    "url": "/api/projects/1645/kitchen-fixtures",
     "data": [
       {
         "name": "3 comp sink",
@@ -251,7 +255,8 @@ When retrieve a list of objects, the amount of meta that is returned via the API
       }
     ]
   },
-  "unique_local_requirements": false
+  "valid": true,
+  "invalid_values": []
 }
 ```
 
@@ -459,122 +464,9 @@ These values are provided in both pounds and gallons.
 ::: details fixtures <span class="code-note">object</span>
 A list of kitchen fixtures used to size this project.
 
-[See Kitchen Fixtures](/grease-monkey/other-resources/kitchen-fixtures.html)
+[See Kitchen Fixtures](/grease-monkey/kitchen-fixtures)
 :::
 
 ::: details unique_local_requirements <span class="code-note">boolean</span>
-If the jurisdiction in which the project resides has unique requirements; prevening Grease Monkey from accurately recommending a product.
-:::
-
-## List of Projects
-
-Returns a list of projects from Grease Monkey with related engineer and jurisdiction information.
-
-``` http
-GET /api/projects
-```
-
-### Parameters
-
-#### zip_codes
-
-<span class="code-note block">optional, array or string</span>
-
-Projects filtered by the zip code provided in the location's address. This parameter can be either a single zip code (as a string):
-
-``` http
-/api/projects?zip_codes=64108
-```
-
-or an array of zip codes:
-
-``` http
-/api/projects?zip_codes[]=64108&zip_codes[]=66061
-```
-
-#### types
-
-<span class="code-note block">optional, array or string</span>
-
-Projects filtered by their specified construction type. This parameter can be either a single type (as a string):
-
-``` http
-/api/projects?types=newConstruction
-```
-
-or an array of types:
-
-``` http
-/api/users?types[]=newConstruction&types[]=tenantFinish
-```
-
-##### Available Values
-
-* newConstruction
-* tenantFinish
-* shell
-* interceptorReplacement
-
-### Other Parameters
-
-`limit` <span class="code-note">optional, default: 25</span>
-
-`offset` <span class="code-note">optional, default: 0</span>
-
-## Project
-
-Returns an individual project identified by ID
-
-``` http
-GET /api/projects/:id
-```
-
-### Parameters
-
-#### notes
-
-<span class="code-note block">optional, boolean</span>
-
-If you would like to include the project's Schier Admin-generated notes.
-
-[Also see Notes](/grease-monkey/other-resources/notes.html)
-
-``` http
-/api/projects/1320?notes=true
-```
-
-::: tip Note
-This defaults to false because of the large amount of information that can be included with this response.
-:::
-
-#### accessories
-
-<span class="code-note block">optional, boolean</span>
-
-If you would like to include the list of recommended, compatible accessories for this project. 
-
-``` http
-/api/projects/1320?accessories=true
-```
-
-[Also see Product Accessories](/grease-monkey/other-resources/product-accessories.html)
-
-::: tip Note
-This defaults to false because of the large amount of information that can be included with this response.
-:::
-
-#### fixtures
-
-<span class="code-note block">optional, boolean</span>
-
-If you would like to include the list of kitchen fixtures and their detailed information.
-
-Also [see Kitchen Fixtures](/grease-monkey/other-resources/kitchen-fixtures.html).
-
-``` http
-/api/projects/1320?fixtures=true
-```
-
-::: warning Notice
-Due to the highly-verbose nature of this information, requesting this information is cautioned; especially with high-latency network connections.
+If the jurisdiction in which the project resides has unique requirements; preventing Grease Monkey from accurately recommending a product.
 :::
