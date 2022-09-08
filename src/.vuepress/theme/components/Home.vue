@@ -25,15 +25,13 @@
             </p>
 
             <p
-                v-if="data.actionText"
+                v-if="data.actionText && data.actionLink"
                 class="action"
             >
                 <NavLink
                     class="action-button"
                     :item="actionLink"
-                    v-if="actionLink.link"
                 />
-                <login-button></login-button>
             </p>
         </header>
 
@@ -76,9 +74,7 @@ import LoginButton from "../../components/LoginButton";
 export default {
     name: 'Home',
 
-    components: {LoginButton, NavLink },
-
-    mixins: [ Authentication ],
+    components: { NavLink },
 
     computed: {
         data () {

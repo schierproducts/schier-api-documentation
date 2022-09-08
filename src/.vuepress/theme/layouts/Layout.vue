@@ -29,6 +29,18 @@
 
         <Home v-if="$page.frontmatter.home" />
 
+        <PageAuth
+            v-else-if="$page.frontmatter.auth"
+            :sidebar-items="sidebarItems"
+        >
+            <template #top>
+                <slot name="page-top" />
+            </template>
+            <template #bottom>
+                <slot name="page-bottom" />
+            </template>
+        </PageAuth>
+
         <Page
             v-else
             :sidebar-items="sidebarItems"
@@ -44,20 +56,24 @@
 </template>
 
 <script>
-import Home from '@theme/components/Home.vue'
+import Layout from '@theme/layouts/Layout.vue'
 import Navbar from '@theme/components/Navbar.vue'
+import Home from '@theme/components/Home.vue'
 import Page from '@theme/components/Page.vue'
+import PageAuth from '@theme/components/PageAuth.vue'
 import Sidebar from '@theme/components/Sidebar.vue'
-import { resolveSidebarItems } from '../util'
+import { resolveSidebarItems } from '@theme/util'
 
 export default {
+    extends: Layout,
     name: 'Layout',
 
     components: {
         Home,
         Page,
         Sidebar,
-        Navbar
+        Navbar,
+        PageAuth,
     },
 
     data () {

@@ -241,7 +241,7 @@ module.exports = {
       }
     }
   },
-  globalUIComponents: [
-    'Redirect',
-  ]
+  // globalUIComponents: [
+  //   'Redirect',
+  // ]
 }
