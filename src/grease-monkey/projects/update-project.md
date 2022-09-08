@@ -2,6 +2,7 @@
 title: PUT Update Project
 description: Update an existing Grease Monkey project.
 sidebarDepth: 0
+auth: true
 ---
 
 # PUT Update Project

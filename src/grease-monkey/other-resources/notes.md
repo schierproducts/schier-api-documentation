@@ -1,5 +1,6 @@
 ---
 description: Expected response information from notes that have been attached to either a jurisdiction or project
+auth: true
 ---
 
 # Notes

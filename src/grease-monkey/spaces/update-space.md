@@ -2,6 +2,7 @@
 title: PUT Update Space
 description: Update an existing project space that makes up a shell space building.
 sidebarDepth: 0
+auth: true
 ---
 
 # PUT Update a Space

@@ -2,6 +2,7 @@
 title: GET Kitchen Fixture (by Id)
 description: Return a single kitchen fixture associated with a Grease Monkey project.
 sidebarDepth: 0
+auth: true
 ---
 
 # GET Kitchen Fixture

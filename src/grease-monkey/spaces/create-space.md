@@ -2,6 +2,7 @@
 title: POST Create Space
 description: Create a new space that makes up a shell space building.
 sidebarDepth: 0
+auth: true
 ---
 
 # POST Create a Space

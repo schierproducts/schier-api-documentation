@@ -2,6 +2,7 @@
 title: Search
 description: Enables each of the various Grease Monkey API's to be searched against
 next: /grease-monkey/other-resources/
+auth: true
 ---
 
 # Search

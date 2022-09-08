@@ -2,6 +2,7 @@
 title: DELETE Project
 description: Delete a project and all associated kitchen fixtures, spaces, etc.
 sidebarDepth: 0
+auth: true
 ---
 
 # DELETE Project

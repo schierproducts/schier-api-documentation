@@ -1,6 +1,7 @@
 ---
 title: Users
 description: This object references a user within Grease Monkey.
+auth: true
 ---
 
 # Users

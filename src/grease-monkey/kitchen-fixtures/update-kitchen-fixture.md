@@ -2,6 +2,7 @@
 title: PUT Update Kitchen Fixture
 description: Update an existing kitchen fixture that is associated with a project.
 sidebarDepth: 0
+auth: true
 ---
 
 # PUT Update Kitchen Fixture

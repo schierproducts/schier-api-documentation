@@ -2,6 +2,7 @@
 title: GET Kitchen Fixture Types
 description: Return a list of available Kitchen Fixtures that can be added to a project.
 sidebarDepth: 0
+auth: true
 ---
 
 # GET Kitchen Fixture Types

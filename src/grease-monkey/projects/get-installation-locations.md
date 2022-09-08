@@ -2,6 +2,7 @@
 title: GET Project Indoor Installation Locations
 description: Return a list of available locations on where the project can be installed when located indoors.
 sidebarDepth: 0
+auth: true
 ---
 
 # GET Project Indoor Installation Locations

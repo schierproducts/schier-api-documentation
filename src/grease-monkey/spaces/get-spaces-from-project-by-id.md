@@ -2,6 +2,7 @@
 title: GET Spaces from Project (by Id)
 description: Return a list of spaces that are associated with a Grease Monkey project.
 sidebarDepth: 0
+auth: true
 ---
 
 # GET Spaces from Project

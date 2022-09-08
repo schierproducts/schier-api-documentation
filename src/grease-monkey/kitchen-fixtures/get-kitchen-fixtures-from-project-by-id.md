@@ -2,6 +2,7 @@
 title: GET Kitchen Fixtures from Project (by Id)
 description: Return a list of kitchen fixtures that are associated with a Grease Monkey project.
 sidebarDepth: 0
+auth: true
 ---
 
 # GET Kitchen Fixtures from Project

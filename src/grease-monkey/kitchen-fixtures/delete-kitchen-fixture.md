@@ -2,6 +2,7 @@
 title: DELETE Kitchen Fixture
 description: Detatch a kitchen fixture from project and remove it.
 sidebarDepth: 0
+auth: true
 ---
 
 # DELETE Kitchen Fixture

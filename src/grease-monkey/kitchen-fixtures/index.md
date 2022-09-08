@@ -2,6 +2,7 @@
 title: Kitchen Fixtures
 description: Expected response information from the Kitchen Fixture data type
 sidebarDepth: 0
+auth: true
 ---
 
 # Kitchen Fixtures

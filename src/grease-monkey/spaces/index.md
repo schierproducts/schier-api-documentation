@@ -2,6 +2,7 @@
 title: Spaces
 description: Expected responses/schema for a compartmentalized space within a larger structure.
 sidebarDepth: 0
+auth: true
 ---
 
 # Spaces

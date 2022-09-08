@@ -2,6 +2,7 @@
 title: GET Construction Types
 description: Return a list of key/value pairs that indicate the types of available construction types.
 sidebarDepth: 0
+auth: true
 ---
 
 # GET Project Construction Types

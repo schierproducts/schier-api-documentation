@@ -2,6 +2,7 @@
 title: POST Create Kitchen Fixture
 description: Create a new kitchen fixture that is associated with a project.
 sidebarDepth: 0
+auth: true
 ---
 
 # POST Create a Kitchen Fixture

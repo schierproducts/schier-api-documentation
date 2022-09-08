@@ -2,6 +2,7 @@
 title: GET Menu Types
 description: Return a list of available menu types (food genres) classifies the restaurant or FSE that will house the interceptor.
 sidebarDepth: 0
+auth: true
 ---
 
 # GET Menu Types

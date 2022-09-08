@@ -2,6 +2,7 @@
 title: GET All Projects
 description: Get a list of Grease Monkey Projects or individual project.
 sidebarDepth: 0
+auth: true
 ---
 
 # GET All Grease Monkey Projects

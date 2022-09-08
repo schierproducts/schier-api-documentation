@@ -2,6 +2,7 @@
 title: DELETE Space
 description: Delete a space from a desired project.
 sidebarDepth: 0
+auth: true
 ---
 
 # DELETE Space

@@ -2,6 +2,7 @@
 title: GET a Project (by Id)
 description: Returns an individual Grease Monkey project identified by ID.
 sidebarDepth: 0
+auth: true
 ---
 
 # GET Project by ID

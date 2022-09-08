@@ -2,6 +2,7 @@
 title: POST Submit Projects for Review
 description: Send a list of projects to the Regulatory Compliance Specialists for specification review.
 sidebarDepth: 0
+auth: true
 ---
 
 # POST Submit Projects for Review

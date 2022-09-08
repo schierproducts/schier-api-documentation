@@ -2,6 +2,7 @@
 title: POST Create Project
 description: Create a new Grease Monkey project.
 sidebarDepth: 0
+auth: true
 ---
 
 # POST Create a Project
