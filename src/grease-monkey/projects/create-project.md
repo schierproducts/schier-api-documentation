@@ -59,6 +59,8 @@ POST /api/projects
 
 **construction_type** | `string` : The type of installation for the specified interceptor. This is an enumerated value. See [Construction Types](/grease-monkey/projects/get-construction-types#endpoint) for more information.
 
+**interior_location** | `string`,`null` : If installed indoors, where the interceptor will be located specifically within the structure. This is an enumerated value. See [Interior Locations](/grease-monkey/projects/get-interior-locations#endpoint) for more information.
+
 **installation_location** | `string` : Where will the interceptor be installed; accepted values are `indoors` and `outdoors`
 
 **buried** | `boolean`,`null` : If the installed interceptor will be buried; **defaults to `false`**
