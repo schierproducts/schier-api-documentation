@@ -1,11 +1,11 @@
 ---
-title: GET a Project (by Id)
+title: GET Retrieve Project (by Id)
 description: Returns an individual Grease Monkey project identified by ID.
 sidebarDepth: 0
 auth: true
 ---
 
-# GET Project by ID
+# GET Retrieve project by ID
 
 Returns an individual Grease Monkey project identified by ID
 

@@ -1,11 +1,11 @@
 ---
-title: DELETE Project
+title: DELETE Remove Project
 description: Delete a project and all associated kitchen fixtures, spaces, etc.
 sidebarDepth: 0
 auth: true
 ---
 
-# DELETE Project
+# DELETE Remove Project
 
 Delete a project and all associated kitchen fixtures, spaces, etc.
 
