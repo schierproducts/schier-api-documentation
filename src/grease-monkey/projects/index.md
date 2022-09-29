@@ -60,7 +60,20 @@ When retrieve a list of objects, the amount of meta that is returned via the API
   },
   "food_waste_disposer": false,
   "servings_per_day": 0,
-  "recommended_product": "GB2",
+  "recommended_product": {
+    "id": 73,
+    "name": "GB-500-250HF",
+    "description": "Polyethylene Grease Interceptor",
+    "image": "http://grease-monkey.test/storage/QmG1OujMleRo3P79NtCrt2ttPU7MHq1rTgGpgQ3p.png",
+    "dimensions": {
+      "length": 94.25,
+      "width": 46,
+      "height": 49.5
+    },
+    "grease_capacity": 1859,
+    "liquid_capacity": 510,
+    "spec_sheet": null
+  },
   "flow_rate": {
     "pipe": {
       "value": 75,
@@ -255,8 +268,8 @@ When retrieve a list of objects, the amount of meta that is returned via the API
       }
     ]
   },
-  "valid": true,
-  "invalid_values": []
+  "available_for_submission": true,
+  "values_needing_review": []
 }
 ```
 
@@ -349,6 +362,10 @@ Specific information regarding the jurisdiction in which this project is located
 ```
 :::
 
+::: details unique_local_requirements <span class="code-note">boolean</span>
+If the jurisdiction in which the project resides has unique requirements; preventing Grease Monkey from accurately recommending a product.
+:::
+
 ::: details pump_out_cycle <span class="code-note">integer</span>
 The recommended number of days between pump out
 :::
@@ -405,8 +422,38 @@ Does the location contain a solid food waster disposer (garbage disposer)
 The average number of meals/servings that the location will provide to consumers 
 :::
 
-::: details recommended_product <span class="code-note">optional, string</span>
-The name of the recommended Schier product determined by the information provided by the user.
+::: details recommended_product <span class="code-note">optional, object</span>
+A dictionary of information based on the recommended product provided by Grease Monkey.
+
+#### Property Description
+
+* `id` - The unique ID of the product within Grease Monkey
+* `name` - The name of the product.
+* `description` - A brief description of the product and it's role.
+* `image` - An image url to the recommended product.
+* `dimensions.length` - The length of the product in inches.
+* `dimensions.width` - The width of the product in inches.
+* `dimensions.height` - The height of the product in inches.
+* `grease_capacity` - The value by which the recommended product was determined. Normally, this number is the lower of the non-zero pipe/two_minute values; **measured in pounds**. This can change depending on the jurisdiction's local requirements.
+* `liquid_capacity` - The amount of liquid that can reside within the recommended product at any given time.
+* `spec_sheet` - If available, the link to the product's spec sheet.
+
+```json
+{
+  "id": 73,
+  "name": "GB-500-250HF",
+  "description": "Polyethylene Grease Interceptor",
+  "image": "http://grease-monkey.test/storage/QmG1OujMleRo3P79NtCrt2ttPU7MHq1rTgGpgQ3p.png",
+  "dimensions": {
+    "length": 94.25,
+    "width": 46,
+    "height": 49.5
+  },
+  "grease_capacity": 1859,
+  "liquid_capacity": 510,
+  "spec_sheet": null
+}
+```
 :::
 
 ::: details flow_rate <span class="code-note">object</span>
@@ -467,6 +514,6 @@ A list of kitchen fixtures used to size this project.
 [See Kitchen Fixtures](/grease-monkey/kitchen-fixtures)
 :::
 
-::: details unique_local_requirements <span class="code-note">boolean</span>
-If the jurisdiction in which the project resides has unique requirements; preventing Grease Monkey from accurately recommending a product.
+::: details available_for_submission <span class="code-note">boolean</span>
+If the project has the necessary values completed and Grease Monkey has verified that it is valid for submission for pre-approval
 :::

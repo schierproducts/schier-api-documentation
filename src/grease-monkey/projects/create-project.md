@@ -172,7 +172,20 @@ Upon a successful creation of a project, a new instance of the [Project Object](
   },
   "food_waste_disposer": false,
   "servings_per_day": 0,
-  "recommended_product": "GB2",
+  "recommended_product": {
+    "id": 73,
+    "name": "GB-500-250HF",
+    "description": "Polyethylene Grease Interceptor",
+    "image": "http://grease-monkey.test/storage/QmG1OujMleRo3P79NtCrt2ttPU7MHq1rTgGpgQ3p.png",
+    "dimensions": {
+      "length": 94.25,
+      "width": 46,
+      "height": 49.5
+    },
+    "grease_capacity": 1859,
+    "liquid_capacity": 510,
+    "spec_sheet": null
+  },
   "flow_rate": {
     "pipe": {
       "value": 75,
@@ -208,8 +221,8 @@ Upon a successful creation of a project, a new instance of the [Project Object](
     "url": "/api/projects/1645/kitchen-fixtures",
     "data": []
   },
-  "valid": false,
-  "invalid_values": [
+  "available_for_submission": false,
+  "values_needing_review": [
     "dont_know_fixtures",
     "fixtures"
   ]

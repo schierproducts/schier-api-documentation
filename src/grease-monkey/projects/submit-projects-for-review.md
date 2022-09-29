@@ -35,7 +35,7 @@ POST /api/projects/submit
 **project_ids** | `array` : An array of valid project ids that will submit the projects for review.
 
 ::: tip Note
-The project must have the `"valid": true` property/value in order for it be submitted. If not, the API will error accordingly.
+The project must have the `"available_for_submission": true` property/value in order for it be submitted. If not, the API will error accordingly.
 :::
 
 ### Sample Request
