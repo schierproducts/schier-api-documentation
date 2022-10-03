@@ -15,7 +15,7 @@ The Menu Type object provides a combination of label and key with an object the 
 
 ```json
 {
-  "object": "object",
+  "object": "menu-type-object",
   "name": "Greek",
   "key": "greek",
   "grease_output": {
