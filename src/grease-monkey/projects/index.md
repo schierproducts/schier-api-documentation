@@ -501,6 +501,8 @@ These values are provided in both pounds and gallons.
 
 #### Property Description
 
+* `menu_type` - The human-friendly version of the menu/restaurant type of food that will be served
+* `menu_type_value` - The enumerated value of the menu type; this is what the API will consume
 * `per_serving` - The amount of grease produced by each serving/meal
 * `per_day` - The amount of grease produced each day
 * `per_30_days` - The amount of grease produced over a 30-day period

@@ -61,6 +61,8 @@ POST /api/projects
 
 **interior_location** | `string`,`null` : If installed indoors, where the interceptor will be located specifically within the structure. This is an enumerated value. See [Interior Locations](/grease-monkey/projects/get-interior-locations#endpoint) for more information.
 
+**menu_type** | `string`,`null` : The type of food/menu that will be served at this location/FSE. This is an enumerated value. See [Menu types](/grease-monkey/projects/get-menu-types#endpoint) for more information.
+
 **installation_location** | `string` : Where will the interceptor be installed; accepted values are `indoors` and `outdoors`
 
 **buried** | `boolean`,`null` : If the installed interceptor will be buried; **defaults to `false`**
