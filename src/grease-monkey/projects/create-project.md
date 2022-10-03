@@ -210,6 +210,8 @@ Upon a successful creation of a project, a new instance of the [Project Object](
     "dfu": 0
   },
   "grease": {
+    "menu_type": null,
+    "menu_type_value": null,
     "capacity_method": {
       "name": "Number of Seats",
       "key": "numberOfSeats",

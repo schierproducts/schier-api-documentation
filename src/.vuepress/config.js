@@ -155,6 +155,7 @@ module.exports = {
               '/grease-monkey/projects/get-project-by-id',
               '/grease-monkey/projects/get-installation-locations',
               '/grease-monkey/projects/get-construction-types',
+              '/grease-monkey/projects/get-menu-types',
               '/grease-monkey/projects/create-project',
               '/grease-monkey/projects/update-project',
               '/grease-monkey/projects/delete-project',
