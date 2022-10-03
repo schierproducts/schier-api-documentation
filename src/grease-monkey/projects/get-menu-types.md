@@ -46,10 +46,10 @@ GET /api/menu-types
 ```json
 {
     "object": "list",
-    "url": "/api/construction-types",
+    "url": "/api/menu-types",
     "data": [
       {
-        "object": "object",
+        "object": "menu-type-object",
         "name": "Greek",
         "key": "greek",
         "grease_output": {
@@ -58,7 +58,7 @@ GET /api/menu-types
         }
       },
       {
-        "object": "object",
+        "object": "menu-type-object",
         "name": "Grocery Store",
         "key": "groceryStore",
         "grease_output": {
@@ -67,7 +67,7 @@ GET /api/menu-types
         }
       },
       {
-        "object": "object",
+        "object": "menu-type-object",
         "name": "Ice Cream / Yogurt / Smoothies",
         "key": "iceCreamYogurtSmoothies",
         "grease_output": {
