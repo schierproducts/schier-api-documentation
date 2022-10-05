@@ -33,7 +33,10 @@ export default {
     props: ['sidebarItems'],
     computed: {
         isDev() {
-            return window.webpackHotUpdate !== undefined;
+            if (window) {
+                return window.webpackHotUpdate !== undefined;
+            }
+            return false;
         }
     }
 }
