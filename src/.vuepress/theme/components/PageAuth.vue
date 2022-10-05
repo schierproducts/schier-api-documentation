@@ -2,7 +2,7 @@
   <main class="page">
     <slot name="top" />
 
-      <div v-if="user">
+      <div v-if="user || isDev">
         <Content class="theme-default-content" />
         <PageEdit />
       </div>
@@ -31,5 +31,10 @@ export default {
     mixins: [ Authentication ],
     components: {LoginButton, PageEdit, PageNav },
     props: ['sidebarItems'],
+    computed: {
+        isDev() {
+            return window.webpackHotUpdate !== undefined;
+        }
+    }
 }
 </script>
