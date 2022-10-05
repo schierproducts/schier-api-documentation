@@ -35,6 +35,22 @@ The Installation Location object provides a combination of label and key.
 GET /api/indoor-installation-locations
 ```
 
+### Parameters
+
+#### project_id
+
+<span class="code-note block">optional, integer</span>
+
+In some cases, different locations will be available/required based on the project's location and/or jurisdiction assignment. In the event that you want to return locations based on the project, append the newly-created project's id as a url parameter.
+
+``` http
+/api/indoor-installation-locations?project_id=689
+```
+
+::: tip Note
+In order for these values to be accurate, a valid address must be added to the project and assigned to a jurisdiction. 
+:::
+
 ## Sample Response
 
 ```json
