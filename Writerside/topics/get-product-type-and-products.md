@@ -4,7 +4,7 @@ Retrieve a single product type by it's key identifier, and all the individual pr
 
 <api-endpoint openapi-path="./../api-spec/product-api/index.yaml" endpoint="/product-types/{ProductTypeKey}/products" method="GET" generate-samples="true">
     <request>
-        <sample title="ProductTypeKey" lang="string">
+        <sample title="ProductTypeKey" lang="JSON">
             sampling_port
         </sample>
     </request>
