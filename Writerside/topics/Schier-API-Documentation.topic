@@ -31,9 +31,12 @@
         <primary>
             <title>Get started</title>
             <a href="sdk-overview.md">SDK Overview</a>
-<!--            <a href="" summary="With a custom card summary"/>-->
         </primary>
-        <secondary></secondary>
+        <secondary>
+            <title>Other Information</title>
+            <a href="rest-product-types.md">Product Types</a>
+            <a href="rest-products.md">Products</a>
+        </secondary>
     </section-starting-page>
 
 </topic>
