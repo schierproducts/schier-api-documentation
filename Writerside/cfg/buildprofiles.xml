@@ -7,6 +7,7 @@
         <header-logo>pioneer-logo.svg</header-logo>
         <webmaster>developers@schierproducts.com</webmaster>
 <!--        <custom-favicons>apple-touch-icon.png</custom-favicons>-->
+        <web-root>https://api-docs.schierproducts.com/</web-root>
     </variables>
     <build-profile instance="product-api">
         <variables>
