@@ -10,6 +10,9 @@
     </variables>
     <build-profile instance="product-api">
         <variables>
+            <algolia-id>SDZNM9UIJH</algolia-id>
+            <algolia-index>pages</algolia-index>
+            <algolia-api-key>69a3134b14b17dc614b560778e5479d0</algolia-api-key>
             <noindex-content>false</noindex-content>
         </variables>
     </build-profile>
