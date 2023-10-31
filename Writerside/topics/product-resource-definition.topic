@@ -35,8 +35,9 @@
 
         <!--    Add several topics that are less important or are relevant only for advanced/experienced users.    -->
         <secondary>
-            <title>Product Specs</title>
-<!--            <a href="product-rating.md"/>-->
+            <title>Other Links</title>
+            <a href="https://schierproducts.com" summary="Learn more about Schier's product offering">Schier Website</a>
+            <a href="https://api.schierproducts.com" summary="Already a user? Click here to go to the API">Schier API</a>
         </secondary>
     </section-starting-page>
 
