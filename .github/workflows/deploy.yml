@@ -56,7 +56,7 @@ jobs:
           path: artifacts/${{ env.ALGOLIA_ARTIFACT }}
           retention-days: 7
 
-  publish-indexes:
+  algolia-indexes:
     # Requires the build-job results
     needs: build
     runs-on: ubuntu-latest
