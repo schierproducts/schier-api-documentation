@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+
+<instance-profile id="product-api"
+                 name="Product API"
+                 start-page="Schier-API-Documentation.topic">
+
+    <toc-element topic="Schier-API-Documentation.topic"/>
+    <toc-element topic="getting-started.md"/>
+    <toc-element topic="product-api.md">
+        <toc-element topic="REST-API.md">
+            <toc-element topic="rest-product-types.md">
+                <toc-element topic="product-types-list.md"/>
+                <toc-element topic="get-single-product-type.md"/>
+                <toc-element topic="get-product-type-and-products.md"/>
+            </toc-element>
+            <toc-element topic="rest-products.md">
+                <toc-element topic="get-list-of-products.md"/>
+                <toc-element topic="get-single-product.md"/>
+                <toc-element topic="product-resource-definition.topic">
+                    <toc-element topic="product-rating.md"/>
+                    <toc-element topic="product-images.md"/>
+                    <toc-element topic="product-certification.md"/>
+                </toc-element>
+            </toc-element>
+        </toc-element>
+        <toc-element topic="sdk-overview.md">
+            <toc-element topic="php-sdk.topic">
+                <toc-element topic="setup.md"/>
+                <toc-element topic="laravel.md"/>
+                <toc-element topic="error-handling.md"/>
+                <toc-element topic="php-sdk-reference.md"/>
+            </toc-element>
+        </toc-element>
+    </toc-element>
+</instance-profile>
