@@ -104,7 +104,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     # Requires test job results
-    needs: build
+    needs: test
     runs-on: ubuntu-latest
 
     steps:
