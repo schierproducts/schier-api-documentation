@@ -4,7 +4,7 @@ Retrieve a single product by it's part/model number.
 
 <api-endpoint openapi-path="./../api-spec/product-api/index.yaml" endpoint="/products/{PartNumber}" method="GET" generate-samples="true">
     <request>
-        <sample title="PartNumber" lang="string">
+        <sample title="PartNumber" lang="JSON">
             4060-001-04
         </sample>
     </request>
