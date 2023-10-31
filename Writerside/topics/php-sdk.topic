@@ -12,15 +12,19 @@
         </description>
 
         <spotlight>
-            <title>Some title</title>
+            <title>Getting Started with SDK</title>
             <a href="setup.md" type="start" />
             <a href="laravel.md" type="open-source" />
         </spotlight>
-        <primary></primary>
-        <secondary>
-            <title>Reference</title>
+        <primary>
+            <title>Other References</title>
             <a href="php-sdk-reference.md"/>
             <a href="error-handling.md" summary="With a custom card summary"/>
+        </primary>
+        <secondary>
+            <title>Resources</title>
+            <a href="https://schierproducts.com" summary="Learn more about Schier's product offering">Schier Website</a>
+            <a href="https://api.schierproducts.com" summary="Already a user? Click here to go to the API">Schier API</a>
         </secondary>
     </section-starting-page>
 </topic>
