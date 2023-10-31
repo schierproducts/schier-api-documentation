@@ -11,11 +11,12 @@
             This article provides software development kit documentation for the Schier Product API written in the PHP language with optional Laravel support.
         </description>
 
-        <primary>
-            <title>Get started</title>
-            <a href="setup.md" />
-            <a href="laravel.md">Laravel-specific setup</a>
-        </primary>
+        <spotlight>
+            <title>Some title</title>
+            <a href="setup.md" type="start" />
+            <a href="laravel.md" type="open-source" />
+        </spotlight>
+        <primary></primary>
         <secondary>
             <title>Reference</title>
             <a href="php-sdk-reference.md"/>
