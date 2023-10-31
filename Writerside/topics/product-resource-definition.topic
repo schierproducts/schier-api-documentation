@@ -18,20 +18,25 @@
     <section-starting-page>
         <title>Other Product Resources</title>
         <description>
-            The <a href="product-api.md">Product API</a> leverages other resources/objects to explain each of the product's features and attributes. Within this list are a few other resources that might be valuable.
+            The Product API leverages other resources/objects to explain each of the product's features and attributes. Within this list are a few other resources that might be valuable.
         </description>
+
+        <spotlight>
+            <a href="product-rating.md" type="tools" />
+            <a href="product-images.md" type="creative" />
+        </spotlight>
 
         <!--    Add several topics that are most important for this section.    -->
         <primary>
             <title>Product Assets</title>
-            <a href="product-images.md"/>
+<!--            <a href="product-images.md"/>-->
             <a href="product-certification.md"/>
         </primary>
 
         <!--    Add several topics that are less important or are relevant only for advanced/experienced users.    -->
         <secondary>
             <title>Product Specs</title>
-            <a href="product-rating.md"/>
+<!--            <a href="product-rating.md"/>-->
         </secondary>
     </section-starting-page>
 
