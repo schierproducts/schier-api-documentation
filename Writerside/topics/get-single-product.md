@@ -361,98 +361,6 @@ Retrieve a single product by it's part/model number.
             },
             {
                 "object": "product",
-                "id": 7,
-                "name": "CC1",
-                "short_name": "CC1",
-                "part_number": "8030-003-01",
-                "short_description": "Clamping collar for units with 21\" covers, recessed and suspended.",
-                "market_specific_description": "Clamping collar for units with 21\" covers, recessed and suspended. Requires FCR1. For use with models GB1, GB2 and GB3.",
-                "store_id": "129",
-                "link": "https://schierproducts.com/shop/cc1",
-                "price": {
-                    "object": "product-price",
-                    "list": "474.00",
-                    "retail": {
-                        "object": "price",
-                        "price": "331.80",
-                        "multiplier": 0.7
-                    },
-                    "wholesale": {
-                        "object": "price",
-                        "price": "260.70",
-                        "multiplier": 0.55
-                    }
-                },
-                "types": [
-                    "Clamping Collar"
-                ],
-                "images": {
-                    "object": "product-image-library",
-                    "primary": {
-                        "object": "image-library",
-                        "orig": "https://product-assets.schierproducts.com/product-photos/cc1/917a3bc6-6f30-400c-92ae-65fa23287fa8.png",
-                        "lg": "https://product-assets.schierproducts.com/product-photos/cc1/917a3bc6-6f30-400c-92ae-65fa23287fa8_lg.png",
-                        "md": "https://product-assets.schierproducts.com/product-photos/cc1/917a3bc6-6f30-400c-92ae-65fa23287fa8_md.png",
-                        "sm": "https://product-assets.schierproducts.com/product-photos/cc1/917a3bc6-6f30-400c-92ae-65fa23287fa8_sm.png"
-                    },
-                    "dimension": {
-                        "object": "image-library",
-                        "orig": "https://api.schierproducts.com/img/no-image.png",
-                        "lg": "https://api.schierproducts.com/img/no-image_lg.png",
-                        "md": "https://api.schierproducts.com/img/no-image_md.png",
-                        "sm": "https://api.schierproducts.com/img/no-image_sm.png"
-                    }
-                },
-                "component": false
-            },
-            {
-                "object": "product",
-                "id": 34,
-                "name": "SV10",
-                "short_name": "SV10",
-                "part_number": "8065-001-01",
-                "short_description": "Sewer Viewer wastewater sampling port",
-                "market_specific_description": "Sewer Viewer wastewater sampling port providing 8-inch-wide visual and sampling access to the waste stream in 4\" and 6\" commercial building drain lines.",
-                "store_id": "255",
-                "link": "https://schierproducts.com/shop/sv10",
-                "price": {
-                    "object": "product-price",
-                    "list": "580.00",
-                    "retail": {
-                        "object": "price",
-                        "price": "406.00",
-                        "multiplier": 0.7
-                    },
-                    "wholesale": {
-                        "object": "price",
-                        "price": "319.00",
-                        "multiplier": 0.55
-                    }
-                },
-                "types": [
-                    "Sampling Port"
-                ],
-                "images": {
-                    "object": "product-image-library",
-                    "primary": {
-                        "object": "image-library",
-                        "orig": "https://product-assets.schierproducts.com/product-photos/sv10/060df13b-3249-4858-a1e4-53f4ccaf4b4f.png",
-                        "lg": "https://product-assets.schierproducts.com/product-photos/sv10/060df13b-3249-4858-a1e4-53f4ccaf4b4f_lg.png",
-                        "md": "https://product-assets.schierproducts.com/product-photos/sv10/060df13b-3249-4858-a1e4-53f4ccaf4b4f_md.png",
-                        "sm": "https://product-assets.schierproducts.com/product-photos/sv10/060df13b-3249-4858-a1e4-53f4ccaf4b4f_sm.png"
-                    },
-                    "dimension": {
-                        "object": "image-library",
-                        "orig": "https://product-assets.schierproducts.com/product-photos/sv10/sv10_2.jpg",
-                        "lg": "https://product-assets.schierproducts.com/product-photos/sv10/sv10_2_lg.jpg",
-                        "md": "https://product-assets.schierproducts.com/product-photos/sv10/sv10_2_md.jpg",
-                        "sm": "https://product-assets.schierproducts.com/product-photos/sv10/sv10_2_sm.jpg"
-                    }
-                },
-                "component": true
-            },
-            {
-                "object": "product",
                 "id": 31,
                 "name": "SV24",
                 "short_name": "SV24",
@@ -496,98 +404,6 @@ Retrieve a single product by it's part/model number.
                     }
                 },
                 "component": true
-            },
-            {
-                "object": "product",
-                "id": 33,
-                "name": "SV24-O",
-                "short_name": "SV24-O",
-                "part_number": "8062-0XX-03",
-                "short_description": "Sewer Viewer wastewater sampling port",
-                "market_specific_description": "Sewer Viewer wastewater sampling port providing 20-inch-wide visual and sampling access to the waste stream in 4\" commercial building drain lines.",
-                "store_id": "267",
-                "link": "https://schierproducts.com/shop/sv24-o",
-                "price": {
-                    "object": "product-price",
-                    "list": "2,115.00",
-                    "retail": {
-                        "object": "price",
-                        "price": "1,480.50",
-                        "multiplier": 0.7
-                    },
-                    "wholesale": {
-                        "object": "price",
-                        "price": "1,163.25",
-                        "multiplier": 0.55
-                    }
-                },
-                "types": [
-                    "Sampling Port"
-                ],
-                "images": {
-                    "object": "product-image-library",
-                    "primary": {
-                        "object": "image-library",
-                        "orig": "https://product-assets.schierproducts.com/product-photos/sv24-o/f31a4856-dcd8-48c9-9d33-c27181f04320.png",
-                        "lg": "https://product-assets.schierproducts.com/product-photos/sv24-o/f31a4856-dcd8-48c9-9d33-c27181f04320_lg.png",
-                        "md": "https://product-assets.schierproducts.com/product-photos/sv24-o/f31a4856-dcd8-48c9-9d33-c27181f04320_md.png",
-                        "sm": "https://product-assets.schierproducts.com/product-photos/sv24-o/f31a4856-dcd8-48c9-9d33-c27181f04320_sm.png"
-                    },
-                    "dimension": {
-                        "object": "image-library",
-                        "orig": "https://product-assets.schierproducts.com/product-photos/sv24-o/d56af4a4-2625-426d-8456-e3e0ecb02ba4.jpg",
-                        "lg": "https://product-assets.schierproducts.com/product-photos/sv24-o/d56af4a4-2625-426d-8456-e3e0ecb02ba4_lg.jpg",
-                        "md": "https://product-assets.schierproducts.com/product-photos/sv24-o/d56af4a4-2625-426d-8456-e3e0ecb02ba4_md.jpg",
-                        "sm": "https://product-assets.schierproducts.com/product-photos/sv24-o/d56af4a4-2625-426d-8456-e3e0ecb02ba4_sm.jpg"
-                    }
-                },
-                "component": true
-            },
-            {
-                "object": "product",
-                "id": 18,
-                "name": "PDK1",
-                "short_name": "PDK1",
-                "part_number": "8400-015-01",
-                "short_description": "This drawoff valve kit may be used to remove interceptor contents manually versus pumpout.",
-                "market_specific_description": null,
-                "store_id": "270",
-                "link": "https://schierproducts.com/shop/pdk1",
-                "price": {
-                    "object": "product-price",
-                    "list": "281.00",
-                    "retail": {
-                        "object": "price",
-                        "price": "196.70",
-                        "multiplier": 0.7
-                    },
-                    "wholesale": {
-                        "object": "price",
-                        "price": "154.55",
-                        "multiplier": 0.55
-                    }
-                },
-                "types": [
-                    "Drawoff Kit"
-                ],
-                "images": {
-                    "object": "product-image-library",
-                    "primary": {
-                        "object": "image-library",
-                        "orig": "https://api.schierproducts.com/img/no-image.png",
-                        "lg": "https://api.schierproducts.com/img/no-image_lg.png",
-                        "md": "https://api.schierproducts.com/img/no-image_md.png",
-                        "sm": "https://api.schierproducts.com/img/no-image_sm.png"
-                    },
-                    "dimension": {
-                        "object": "image-library",
-                        "orig": "https://api.schierproducts.com/img/no-image.png",
-                        "lg": "https://api.schierproducts.com/img/no-image_lg.png",
-                        "md": "https://api.schierproducts.com/img/no-image_md.png",
-                        "sm": "https://api.schierproducts.com/img/no-image_sm.png"
-                    }
-                },
-                "component": false
             }
         ]
     },
@@ -605,30 +421,6 @@ Retrieve a single product by it's part/model number.
                 "description": null,
                 "store_id": null,
                 "attributes": [
-                    {
-                        "connection_type": "inlet",
-                        "diameter": "2\"",
-                        "thread_type": "plain",
-                        "connection_feature": null,
-                        "has_pumpout_ports": false,
-                        "object": "product-option-attribute"
-                    },
-                    {
-                        "connection_type": "inlet",
-                        "diameter": "3\"",
-                        "thread_type": "plain",
-                        "connection_feature": null,
-                        "has_pumpout_ports": false,
-                        "object": "product-option-attribute"
-                    },
-                    {
-                        "connection_type": "inlet",
-                        "diameter": "4\"",
-                        "thread_type": "female-thread-fpt",
-                        "connection_feature": null,
-                        "has_pumpout_ports": false,
-                        "object": "product-option-attribute"
-                    },
                     {
                         "connection_type": "outlet",
                         "diameter": "2\"",
@@ -689,18 +481,6 @@ Retrieve a single product by it's part/model number.
             "type": "link",
             "name": "IAPMO Listing for GB1",
             "link": "https://plm.iapmo.org/pld#/certificate/5317/1046"
-        },
-        {
-            "object": "certification",
-            "type": "link",
-            "name": "ASME Test Report for GB1 (20)",
-            "link": "https://product-assets.schierproducts.com/documents/gb1/asme-test-report-for-gb1-20.pdf"
-        },
-        {
-            "object": "certification",
-            "type": "link",
-            "name": "ASME Test Report for GB1 (25)",
-            "link": "https://product-assets.schierproducts.com/documents/gb1/asme-test-report-for-gb1-25.pdf"
         }
     ],
     "spec_sheet": {
