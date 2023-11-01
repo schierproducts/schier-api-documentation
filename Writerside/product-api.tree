@@ -4,9 +4,9 @@
 
 <instance-profile id="product-api"
                  name="Product API"
-                 start-page="Schier-API-Documentation.topic">
+                 start-page="index.topic">
 
-    <toc-element topic="Schier-API-Documentation.topic"/>
+    <toc-element topic="index.topic"/>
     <toc-element topic="getting-started.md"/>
     <toc-element topic="product-api.md">
         <toc-element topic="REST-API.md">
