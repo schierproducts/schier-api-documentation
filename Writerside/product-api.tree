@@ -10,6 +10,7 @@
     <toc-element topic="getting-started.md"/>
     <toc-element topic="product-api.md">
         <toc-element topic="REST-API.md">
+            <toc-element topic="Pagination.md"/>
             <toc-element topic="rest-product-types.md">
                 <toc-element topic="product-types-list.md"/>
                 <toc-element topic="get-single-product-type.md"/>
