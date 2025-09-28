@@ -9,5 +9,3 @@ This repository contains the documentation for the Schier API Documentation that
 <!-- Security scan triggered at 2025-09-09 05:28:27 -->
 
 <!-- Security scan triggered at 2025-09-09 05:37:50 -->
-
-<!-- Security scan triggered at 2025-09-28 15:31:11 -->
